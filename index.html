@@ -129,7 +129,9 @@
     <section id="people" class="section page-section" style="display:none;">
         <div class="container">
             <h2 class="section-title">People</h2>
-            <div class="director-card">
+
+            <!-- Director -->
+            <div class="director-card clickable" data-person="prof_kim">
                 <div class="director-photo"><img src="images/people/prof_kim.jpg" alt="Prof. Youngwon Kim"></div>
                 <div class="director-info">
                     <h3>Youngwon Kim <span class="name-kr">김영원</span></h3>
@@ -143,24 +145,24 @@
 
             <h3 class="group-title">M.S. Students</h3>
             <div class="people-grid">
-                <div class="person-card"><img src="images/people/lee_jemin.jpg" alt="Jemin Lee"><h4>Jemin Lee <span class="name-kr">이제민</span></h4><p class="since">Since 2025-2</p><p class="interest">VR, Games, Convergence Contents</p><p class="email"><i class="fas fa-envelope"></i> char3941@kumoh.ac.kr</p></div>
-                <div class="person-card"><img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim"><h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4><p class="since">Since 2025-2</p><p class="interest">Collaboration, Multimodal Interaction</p><p class="email"><i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr</p></div>
+                <div class="person-card clickable" data-person="lee_jemin"><img src="images/people/lee_jemin.jpg" alt="Jemin Lee"><h4>Jemin Lee <span class="name-kr">이제민</span></h4><p class="since">Since 2025-2</p><p class="interest">VR, Games, Convergence Contents</p><p class="email"><i class="fas fa-envelope"></i> char3941@kumoh.ac.kr</p></div>
+                <div class="person-card clickable" data-person="kim_jeonghyeon"><img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim"><h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4><p class="since">Since 2025-2</p><p class="interest">Collaboration, Multimodal Interaction</p><p class="email"><i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr</p></div>
             </div>
 
             <h3 class="group-title">Undergraduate Students</h3>
             <div class="people-grid">
-                <div class="person-card"><img src="images/people/kang_hyeongjun.jpg" alt="Hyeongjun Kang"><h4>Hyeongjun Kang <span class="name-kr">강형준</span></h4><p class="since">Since 2024-2</p><p class="interest">Immersive Technologies, XR Contents</p><p class="email"><i class="fas fa-envelope"></i> joh0816@gmail.com</p></div>
-                <div class="person-card"><img src="images/people/lee_donghee.jpg" alt="Donghee Lee"><h4>Donghee Lee <span class="name-kr">이동희</span></h4><p class="since">Since 2026-1</p><p class="interest">VR, HCI, Games</p><p class="email"><i class="fas fa-envelope"></i> furyburst@naver.com</p></div>
+                <div class="person-card clickable" data-person="kang_hyeongjun"><img src="images/people/kang_hyeongjun.jpg" alt="Hyeongjun Kang"><h4>Hyeongjun Kang <span class="name-kr">강형준</span></h4><p class="since">Since 2024-2</p><p class="interest">Immersive Technologies, XR Contents</p><p class="email"><i class="fas fa-envelope"></i> joh0816@gmail.com</p></div>
+                <div class="person-card clickable" data-person="lee_donghee"><img src="images/people/lee_donghee.jpg" alt="Donghee Lee"><h4>Donghee Lee <span class="name-kr">이동희</span></h4><p class="since">Since 2026-1</p><p class="interest">VR, HCI, Games</p><p class="email"><i class="fas fa-envelope"></i> furyburst@naver.com</p></div>
             </div>
 
             <h3 class="group-title">Research Intern</h3>
             <div class="people-grid">
-                <div class="person-card"><img src="images/people/nam_yoongi.jpg" alt="Yoongi Nam"><h4>Yoongi Nam <span class="name-kr">남윤기</span></h4><p class="since">Since 2025-2 (Dasso)</p><p class="email"><i class="fas fa-envelope"></i> nyk510@kumoh.ac.kr</p></div>
+                <div class="person-card clickable" data-person="nam_yoongi"><img src="images/people/nam_yoongi.jpg" alt="Yoongi Nam"><h4>Yoongi Nam <span class="name-kr">남윤기</span></h4><p class="since">Since 2025-2 (Dasso)</p><p class="email"><i class="fas fa-envelope"></i> nyk510@kumoh.ac.kr</p></div>
             </div>
 
             <h3 class="group-title">Academic Break</h3>
             <div class="people-grid">
-                <div class="person-card"><img src="images/people/lee_kikong.jpg" alt="Kikong Lee"><h4>Kikong Lee <span class="name-kr">이기공</span></h4><p class="since">Since 2024-1</p><p class="interest">Metaverse Contents, XR Games</p><p class="email"><i class="fas fa-envelope"></i> dlrlrhd@gmail.com</p></div>
+                <div class="person-card clickable" data-person="lee_kikong"><img src="images/people/lee_kikong.jpg" alt="Kikong Lee"><h4>Kikong Lee <span class="name-kr">이기공</span></h4><p class="since">Since 2024-1</p><p class="interest">Metaverse Contents, XR Games</p><p class="email"><i class="fas fa-envelope"></i> dlrlrhd@gmail.com</p></div>
             </div>
 
             <h3 class="group-title">Alumni</h3>
@@ -170,6 +172,14 @@
                 <div class="person-card mini"><h4>Taewan Kim <span class="name-kr">김태완</span></h4><p class="since">Graduated 2025.08 · KETI</p></div>
                 <div class="person-card mini"><h4>Minsu Kim <span class="name-kr">김민수</span></h4><p class="since">Graduated 2025.08</p></div>
             </div>
+        </div>
+    </section>
+
+    <!-- ============ PERSON DETAIL ============ -->
+    <section id="person-detail" class="section page-section" style="display:none;">
+        <div class="container">
+            <button class="back-btn" id="backToPeople"><i class="fas fa-arrow-left"></i> Back to People</button>
+            <div class="profile-detail" id="profileDetail"></div>
         </div>
     </section>
 
