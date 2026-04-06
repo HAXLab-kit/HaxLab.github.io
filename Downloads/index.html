@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAX Lab - Human-centered AX Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" data-section="home">
+                <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSY_6qD33OHiteKQLi3o88NAvjI-wXbRFIDzWsLopNQRMolssqhiQA9_0GtItxoV2xDQjma_b-6DqAaow2oSEo93OnrvF-D4Og_Y1vQFLKkyWMSR3Zp0j3hPFaCbqYDVcHwIrvXveG-wBehp30nR5dIuQ0OuHQbh_6pqYfEeJ5oA-R_eljnUdWgJ8Q=w200" alt="HAX Lab Logo">
+                <span>HAX Lab</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#news" class="nav-link" data-section="news">News</a></li>
+                <li><a href="#people" class="nav-link" data-section="people">People</a></li>
+                <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+                <li><a href="#awards" class="nav-link" data-section="awards">Awards</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Human-centered AX Lab</h1>
+            <p class="hero-subtitle">Advancing Extended Reality &middot; VR &middot; AR &middot; MR &middot; Metaverse</p>
+            <p class="hero-desc">We focus on intuitive human-computer interactions with digital content through XR technologies.</p>
+            <a href="#research" class="hero-btn" data-section="research">Explore Our Research</a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section highlights-section">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-date">2026.3.13</div>
+                    <div class="highlight-tag">Grant</div>
+                    <p>NRF 신진연구자지원사업 선정 - "시각장애인의 일상 인지 확장을 위한 XR-Physical AI 기반 Human-Digital Twin 인터랙션"</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-date">2025.11.12</div>
+                    <div class="highlight-tag">Conference</div>
+                    <p>ACM VRST 2025 Demo: "Multi-User VR Assembly and Manufacture Design: Multimodal Object Modeling"</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-date">2025.11.12</div>
+                    <div class="highlight-tag">Conference</div>
+                    <p>ACM VRST 2025 Paper: "Trade-offs in Virtual Grasping: Interaction Fidelity and Object Affordance"</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-date">2025.10.10</div>
+                    <div class="highlight-tag">Conference</div>
+                    <p>IEEE ISMAR 2025: "What Makes Object Referencing Clear?" - XR Collaboration Strategies</p>
+                </div>
+            </div>
+            <div class="section-action">
+                <a href="#news" class="btn-outline" data-section="news">View All News <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Overview on Home -->
+    <section class="section research-overview-section">
+        <div class="container">
+            <h2 class="section-title">Research Areas</h2>
+            <div class="research-overview-grid">
+                <div class="research-overview-card">
+                    <div class="research-icon"><i class="fas fa-hand-pointer"></i></div>
+                    <h3>Multimodal Interaction</h3>
+                    <p>Gaze, speech, and touch modalities for collaborative XR environments</p>
+                </div>
+                <div class="research-overview-card">
+                    <div class="research-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3>Immersive Interaction</h3>
+                    <p>Virtual grasping, gesture-based controls, and accessible VR experiences</p>
+                </div>
+                <div class="research-overview-card">
+                    <div class="research-icon"><i class="fas fa-users"></i></div>
+                    <h3>Collaborative Interaction</h3>
+                    <p>Real-time multi-user virtual environments for assembly simulations</p>
+                </div>
+                <div class="research-overview-card">
+                    <div class="research-icon"><i class="fas fa-person-walking"></i></div>
+                    <h3>Embodied XR Interaction</h3>
+                    <p>Motion estimation and real-time avatar interaction in VR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section news-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">News</h2>
+            <div class="timeline">
+                <div class="timeline-item"><div class="timeline-date">2026.3.13</div><div class="timeline-content"><span class="tag grant">Grant</span> NRF 신진연구자지원사업 선정 - "시각장애인의 일상 인지 확장을 위한 XR-Physical AI 기반 Human-Digital Twin 인터랙션" (2026-2029)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.11.25</div><div class="timeline-content"><span class="tag member">Member</span> 이동희 연구원 합류</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.11.24</div><div class="timeline-content"><span class="tag grant">Grant</span> RISE 사업 "AI 기반 시설 이상탐지 및 예지보전 솔루션" 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.11.12</div><div class="timeline-content"><span class="tag conference">Conference</span> ACM VRST 2025 Demo: "Multi-User VR Assembly and Manufacture Design: Multimodal Object Modeling"</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.11.12</div><div class="timeline-content"><span class="tag conference">Conference</span> ACM VRST 2025 Paper Presentation: "Trade-offs in Virtual Grasping" (Presenter: Jemin Lee)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.10.10</div><div class="timeline-content"><span class="tag conference">Conference</span> IEEE ISMAR 2025 Presentation: "What Makes Object Referencing Clear?" (Presenter: Jeonghyeon Kim)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.9.14</div><div class="timeline-content"><span class="tag paper">Paper</span> ACM VRST 2025 논문 채택 (acceptance rate: 27%)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.9.3</div><div class="timeline-content"><span class="tag paper">Paper</span> ACM VRST 2025 Conditionally Accepted</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.8.5</div><div class="timeline-content"><span class="tag paper">Paper</span> IEEE ISMAR 2025 논문 채택 (acceptance rate: 21.1%)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.5.21</div><div class="timeline-content"><span class="tag member">Member</span> 김태완 연구원 합류</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.5.7</div><div class="timeline-content"><span class="tag paper">Paper</span> IEEE Access 게재 - "Head-Driven Algorithm for Estimating Upper and Lower Body Motion"</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.5.7</div><div class="timeline-content"><span class="tag grant">Grant</span> 국립과학수사연구원 화재현장 복원 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.4.30</div><div class="timeline-content"><span class="tag paper">Paper</span> Sensors 게재 - "ITap: Index Finger Tap Interaction by Gaze"</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.4.26</div><div class="timeline-content"><span class="tag conference">Conference</span> CHI 2025 참석 (Yokohama, Japan)</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.4.15</div><div class="timeline-content"><span class="tag grant">Grant</span> KETI 디지털트윈 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.3.30</div><div class="timeline-content"><span class="tag grant">Grant</span> 보험개발원 교통사고 영상 분석 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.3.6</div><div class="timeline-content"><span class="tag paper">Paper</span> Electronics 게재 - Immersive VR Navigation for Accessibility</div></div>
+                <div class="timeline-item"><div class="timeline-date">2025.1.1</div><div class="timeline-content"><span class="tag grant">Grant</span> KETI 디지털트윈 연계 ICT 기술 발굴 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.9.10</div><div class="timeline-content"><span class="tag paper">Paper</span> 디지털콘텐츠학회 논문지 2편 게재</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.7.22</div><div class="timeline-content"><span class="tag grant">Grant</span> AI 기반 국방 제품 설계 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.7.8</div><div class="timeline-content"><span class="tag member">Member</span> 강형준, 김구, 김정현, 임준석 합류</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.6.1</div><div class="timeline-content"><span class="tag grant">Grant</span> Spatial Computing XR 멀티모달 인터랙션 과제 선정</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.5.23</div><div class="timeline-content"><span class="tag member">Member</span> 인턴 4명 합류</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.3.4</div><div class="timeline-content"><span class="tag member">Member</span> 이기공, 이제민 합류</div></div>
+                <div class="timeline-item"><div class="timeline-date">2024.1.1</div><div class="timeline-content"><span class="tag lab">Lab</span> Extended Reality &amp; Metaverse Lab 개설, 대학원생 모집 시작</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Section -->
+    <section id="people" class="section people-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">People</h2>
+
+            <!-- Director -->
+            <div class="director-card">
+                <div class="director-info">
+                    <h3>Youngwon Kim <span class="name-kr">김영원</span></h3>
+                    <p class="director-title">Assistant Professor, Director</p>
+                    <p class="director-dept">Department of Computer Software Engineering</p>
+                    <p class="director-affil">Kumoh National Institute of Technology</p>
+                    <div class="director-interests">
+                        <span class="interest-tag">XR</span>
+                        <span class="interest-tag">VR</span>
+                        <span class="interest-tag">AR</span>
+                        <span class="interest-tag">MR</span>
+                        <span class="interest-tag">HCI</span>
+                        <span class="interest-tag">Metaverse</span>
+                    </div>
+                    <p class="director-email"><i class="fas fa-envelope"></i> kim01@kumoh.ac.kr</p>
+                </div>
+            </div>
+
+            <!-- M.S. Students -->
+            <h3 class="people-subtitle">M.S. Students</h3>
+            <div class="people-grid">
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user-graduate"></i></div>
+                    <h4>Jemin Lee <span class="name-kr">이제민</span></h4>
+                    <p class="person-since">Since 2025-2</p>
+                    <p class="person-interest">VR, Games, Convergence Contents</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> char3941@kumoh.ac.kr</p>
+                </div>
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user-graduate"></i></div>
+                    <h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4>
+                    <p class="person-since">Since 2025-2</p>
+                    <p class="person-interest">Collaboration, Multimodal Interaction</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr</p>
+                </div>
+            </div>
+
+            <!-- Undergraduate Students -->
+            <h3 class="people-subtitle">Undergraduate Students</h3>
+            <div class="people-grid">
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user"></i></div>
+                    <h4>Hyeongjun Kang <span class="name-kr">강형준</span></h4>
+                    <p class="person-since">Since 2024-2</p>
+                    <p class="person-interest">Immersive Technologies, XR Contents</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> joh0816@gmail.com</p>
+                </div>
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user"></i></div>
+                    <h4>Donghee Lee <span class="name-kr">이동희</span></h4>
+                    <p class="person-since">Since 2026-1</p>
+                    <p class="person-interest">VR, HCI, Games</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> furyburst@naver.com</p>
+                </div>
+            </div>
+
+            <!-- Research Intern -->
+            <h3 class="people-subtitle">Research Intern</h3>
+            <div class="people-grid">
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user"></i></div>
+                    <h4>Yoongi Nam <span class="name-kr">남윤기</span></h4>
+                    <p class="person-since">Since 2025-2 (Dasso)</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> nyk510@kumoh.ac.kr</p>
+                </div>
+            </div>
+
+            <!-- Academic Break -->
+            <h3 class="people-subtitle">Academic Break</h3>
+            <div class="people-grid">
+                <div class="person-card">
+                    <div class="person-avatar"><i class="fas fa-user"></i></div>
+                    <h4>Kikong Lee <span class="name-kr">이기공</span></h4>
+                    <p class="person-since">Since 2024-1</p>
+                    <p class="person-interest">Metaverse Contents, XR Games</p>
+                    <p class="person-email"><i class="fas fa-envelope"></i> dlrlrhd@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Alumni -->
+            <h3 class="people-subtitle">Alumni</h3>
+            <div class="people-grid">
+                <div class="person-card alumni-card">
+                    <div class="person-avatar"><i class="fas fa-user-check"></i></div>
+                    <h4>Gu Kim <span class="name-kr">김구</span></h4>
+                    <p class="person-since">Graduated 2026.02</p>
+                </div>
+                <div class="person-card alumni-card">
+                    <div class="person-avatar"><i class="fas fa-user-check"></i></div>
+                    <h4>Junseok Im <span class="name-kr">임준석</span></h4>
+                    <p class="person-since">Graduated 2026.02</p>
+                </div>
+                <div class="person-card alumni-card">
+                    <div class="person-avatar"><i class="fas fa-user-check"></i></div>
+                    <h4>Taewan Kim <span class="name-kr">김태완</span></h4>
+                    <p class="person-since">Graduated 2025.08 &middot; KETI</p>
+                </div>
+                <div class="person-card alumni-card">
+                    <div class="person-avatar"><i class="fas fa-user-check"></i></div>
+                    <h4>Minsu Kim <span class="name-kr">김민수</span></h4>
+                    <p class="person-since">Graduated 2025.08</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section research-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-hand-pointer"></i></div>
+                    <h3>Multimodal Interaction</h3>
+                    <ul>
+                        <li>Exploring multimodal interaction techniques for collaborative environments combining gaze, speech, and touch</li>
+                        <li>Real-time multi-user collaboration in simulated manufacturing environments</li>
+                        <li>Tabletop touchpad technique enabling finger-based interaction combined with gaze input to overcome pinch gesture limitations</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3>Immersive Interaction</h3>
+                    <ul>
+                        <li>2D image processing into cubemap format for fully immersive 3D road view VR experiences</li>
+                        <li>Gesture-based controls modeled on everyday movements for digitally marginalized users</li>
+                        <li>Investigation of virtual grasping methods (controller, pinch, full-hand gesture) across diverse object shapes</li>
+                        <li>Analysis of objective metrics (speed, accuracy) and subjective measures (workload, presence)</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-users"></i></div>
+                    <h3>Collaborative Interaction</h3>
+                    <ul>
+                        <li>Interaction techniques enabling intuitive real-time collaboration in multi-user virtual environments</li>
+                        <li>Assembly simulation with gesture, gaze, and speech modalities for shared virtual spaces</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <div class="research-card-icon"><i class="fas fa-person-walking"></i></div>
+                    <h3>Embodied XR Interaction</h3>
+                    <ul>
+                        <li>Upper and lower body motion estimation in VR using only head movement data</li>
+                        <li>Hardware-free approach eliminating need for external sensors or trackers</li>
+                        <li>Real-time avatar interaction for multi-user VR environments and training simulations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <h3 class="projects-subtitle">Ongoing Projects</h3>
+            <div class="projects-list">
+                <div class="project-card">
+                    <div class="project-status ongoing">Ongoing</div>
+                    <h4>XR-Physical AI 기반 Human-Digital Twin 인터랙션</h4>
+                    <p class="project-full">시각장애인의 일상 인지 확장을 위한 XR-Physical AI 기반 Human-Digital Twin 인터랙션</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> 과학기술정보통신부, NRF</span>
+                        <span><i class="fas fa-calendar"></i> 2026 - 2029</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-status ongoing">Ongoing</div>
+                    <h4>대규모 AI 기반 국방 제품 설계 및 유지보수</h4>
+                    <p class="project-full">대규모 AI 기반 국방 제품 설계 및 유지보수 서비스 실증</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> 과학기술정보통신부, NIA</span>
+                        <span><i class="fas fa-calendar"></i> 2024 - 2026</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-status ongoing">Ongoing</div>
+                    <h4>화재현장 자동 복원 및 VR 기반 몰입형 수사 기술</h4>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> 국립과학수사연구원</span>
+                        <span><i class="fas fa-calendar"></i> 2025 - 2027</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-status ongoing">Ongoing</div>
+                    <h4>AI 기반 시설 이상탐지 및 예지보전 솔루션</h4>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> RISE 사업</span>
+                        <span><i class="fas fa-calendar"></i> 2025 - 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="projects-subtitle">Completed Projects</h3>
+            <div class="projects-list">
+                <div class="project-card completed">
+                    <div class="project-status done">Completed</div>
+                    <h4>디지털트윈 연계 ICT 기술 발굴 연구</h4>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> KETI</span>
+                        <span><i class="fas fa-calendar"></i> 2025</span>
+                    </div>
+                </div>
+                <div class="project-card completed">
+                    <div class="project-status done">Completed</div>
+                    <h4>교통사고 영상 분석 시스템 개발</h4>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> 보험개발원</span>
+                        <span><i class="fas fa-calendar"></i> 2025</span>
+                    </div>
+                </div>
+                <div class="project-card completed">
+                    <div class="project-status done">Completed</div>
+                    <h4>XR 멀티모달 인터랙션 기술 (Apple Vision Pro)</h4>
+                    <div class="project-meta">
+                        <span><i class="fas fa-building"></i> S Corporation</span>
+                        <span><i class="fas fa-calendar"></i> 2024 - 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+
+            <div class="pub-tabs">
+                <button class="pub-tab active" data-tab="intl-conf">International Conferences</button>
+                <button class="pub-tab" data-tab="intl-journal">International Journals</button>
+                <button class="pub-tab" data-tab="domestic">Domestic</button>
+                <button class="pub-tab" data-tab="patents">Patents</button>
+            </div>
+
+            <div class="pub-content active" id="intl-conf">
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"Trade-offs in Virtual Grasping: Interaction Fidelity and Object Affordance"</p>
+                            <p class="pub-venue">ACM VRST 2025 (Acceptance Rate: 27%)</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"Multi-User VR Assembly and Manufacture Design: Multimodal Object Modeling"</p>
+                            <p class="pub-venue">ACM VRST 2025 Demo</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"What Makes Object Referencing Clear? Investigating Strategies for XR Collaboration"</p>
+                            <p class="pub-venue">IEEE ISMAR 2025 (Acceptance Rate: 21.1%)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pub-content" id="intl-journal">
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"Head-Driven Algorithm for Estimating Upper and Lower Body Motion in Virtual Reality Environments"</p>
+                            <p class="pub-venue">IEEE Access (SCIE)</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"ITap: Index Finger Tap Interaction by Gaze Integration"</p>
+                            <p class="pub-venue">Sensors (SCIE)</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">"Immersive VR Navigation for Accessibility"</p>
+                            <p class="pub-venue">Electronics (SCIE)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pub-content" id="domestic">
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2024</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">XR 아바타 생성, 저시력 사용자 접근성, AI 기반 포즈 추정, NeRF 기반 3D 모델링 관련 논문</p>
+                            <p class="pub-venue">한국디지털콘텐츠학회 논문지 외</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pub-content" id="patents">
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">시선 기반 가상 터치패드 인터랙션</p>
+                            <p class="pub-venue">특허 출원</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">와위 XR 인터랙션 향상</p>
+                            <p class="pub-venue">특허 출원</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">컨트롤러 기반 보정을 활용한 사실적 아바타 생성</p>
+                            <p class="pub-venue">특허 출원</p>
+                        </div>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-detail">
+                            <p class="pub-title">AI 기반 콜센터 성과 평가 시스템</p>
+                            <p class="pub-venue">특허 출원</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Awards</h2>
+            <div class="awards-list">
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-info">
+                        <h4>Kit Engineering Fair 2025 - 참여상</h4>
+                        <p class="award-recipient">이동희, 한승현, 배태진, 김은영</p>
+                        <p class="award-detail">금오공과대학교 캡스톤디자인 경진대회</p>
+                        <span class="award-date">2025.11.27</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-info">
+                        <h4>GameAlfy Contest - 한국게임학회장상</h4>
+                        <p class="award-recipient">남윤기 (Team: DaSo)</p>
+                        <p class="award-detail">AI 기반 게임 개발</p>
+                        <span class="award-date">2025.9.17</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-info">
+                        <h4>국회의원 표창</h4>
+                        <p class="award-recipient">김정현</p>
+                        <p class="award-detail">금오공과대학교</p>
+                        <span class="award-date">2025.8.22</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-info">
+                        <h4>2024 AI 캡스톤디자인 경진대회 - 장려상</h4>
+                        <p class="award-recipient">김민수, 김정현</p>
+                        <span class="award-date">2024.12.21</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-info">
+                        <h4>2024 AI 캡스톤디자인 경진대회 - 우수상 (2등)</h4>
+                        <p class="award-recipient">김구, 이제민, 이기공, 임준석</p>
+                        <span class="award-date">2024.12.21</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-info">
+                        <h4>2024 한국디지털콘텐츠학회 추계학술대회 - 동상 (3등)</h4>
+                        <p class="award-recipient">김정현, 이제민, 김영원</p>
+                        <span class="award-date">2024.11.8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>B111, Digital Building<br>Kumoh National Institute of Technology<br>61 Daehak-ro, Gumi-si,<br>Gyeongsangbuk-do, Republic of Korea</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>kim01@kumoh.ac.kr</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-globe"></i>
+                    <h4>Web</h4>
+                    <p>haxlab-kit.github.io</p>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.5!2d128.393!3d36.145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDA4JzQyLjAiTiAxMjjCsDIzJzM0LjgiRQ!5e0!3m2!1sen!2skr!4v1" width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSY_6qD33OHiteKQLi3o88NAvjI-wXbRFIDzWsLopNQRMolssqhiQA9_0GtItxoV2xDQjma_b-6DqAaow2oSEo93OnrvF-D4Og_Y1vQFLKkyWMSR3Zp0j3hPFaCbqYDVcHwIrvXveG-wBehp30nR5dIuQ0OuHQbh_6pqYfEeJ5oA-R_eljnUdWgJ8Q=w120" alt="HAX Lab">
+                    <span>HAX Lab</span>
+                </div>
+                <p class="footer-text">&copy; 2024-2026 Human-centered AX Lab. Kumoh National Institute of Technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
