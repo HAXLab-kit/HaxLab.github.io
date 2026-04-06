@@ -66,11 +66,45 @@ function initObserver() {
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
 }
 
+// Lightbox
+function initLightbox() {
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const items = document.querySelectorAll('.gallery-item img');
+    let idx = 0;
+
+    items.forEach((img, i) => {
+        img.addEventListener('click', () => {
+            idx = i;
+            lbImg.src = img.src.replace(/=w\d+/, '=w1600');
+            lb.style.display = 'flex';
+        });
+    });
+
+    document.getElementById('lbClose').addEventListener('click', () => lb.style.display = 'none');
+    document.getElementById('lbPrev').addEventListener('click', () => {
+        idx = (idx - 1 + items.length) % items.length;
+        lbImg.src = items[idx].src.replace(/=w\d+/, '=w1600');
+    });
+    document.getElementById('lbNext').addEventListener('click', () => {
+        idx = (idx + 1) % items.length;
+        lbImg.src = items[idx].src.replace(/=w\d+/, '=w1600');
+    });
+    lb.addEventListener('click', (e) => { if (e.target === lb) lb.style.display = 'none'; });
+    document.addEventListener('keydown', (e) => {
+        if (lb.style.display === 'none') return;
+        if (e.key === 'Escape') lb.style.display = 'none';
+        if (e.key === 'ArrowLeft') document.getElementById('lbPrev').click();
+        if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    const selectors = '.highlight-card,.rp-card,.news-row,.person-card,.director-card,.research-block,.project-card,.pub-table tr,.awards-table tr,.contact-item';
+    const selectors = '.highlight-card,.rp-card,.news-row,.person-card,.director-card,.research-block,.project-card,.pub-table tr,.awards-table tr,.contact-item,.gallery-item';
     document.querySelectorAll(selectors).forEach((el, i) => {
         el.classList.add('fade-in');
         el.style.transitionDelay = `${Math.min(i * 0.03, 0.5)}s`;
     });
     initObserver();
+    initLightbox();
 });
