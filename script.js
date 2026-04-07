@@ -112,25 +112,30 @@ function initObserver() {
 function initLightbox() {
     const lb = document.getElementById('lightbox');
     const lbImg = document.getElementById('lbImg');
-    const items = document.querySelectorAll('.gallery-item img');
+    const items = document.querySelectorAll('#gallery .gallery-item img');
     let idx = 0;
 
     items.forEach((img, i) => {
         img.addEventListener('click', () => {
             idx = i;
-            lbImg.src = img.src.replace(/=w\d+/, '=w1600');
+            const src = img.src;
+            lbImg.src = src.includes('googleusercontent') ? src.replace(/=w\d+/, '=w1600') : src;
             lb.style.display = 'flex';
         });
     });
 
     document.getElementById('lbClose').addEventListener('click', () => lb.style.display = 'none');
+    function getLbSrc(img) {
+        const s = img.src;
+        return s.includes('googleusercontent') ? s.replace(/=w\d+/, '=w1600') : s;
+    }
     document.getElementById('lbPrev').addEventListener('click', () => {
         idx = (idx - 1 + items.length) % items.length;
-        lbImg.src = items[idx].src.replace(/=w\d+/, '=w1600');
+        lbImg.src = getLbSrc(items[idx]);
     });
     document.getElementById('lbNext').addEventListener('click', () => {
         idx = (idx + 1) % items.length;
-        lbImg.src = items[idx].src.replace(/=w\d+/, '=w1600');
+        lbImg.src = getLbSrc(items[idx]);
     });
     lb.addEventListener('click', (e) => { if (e.target === lb) lb.style.display = 'none'; });
     document.addEventListener('keydown', (e) => {
