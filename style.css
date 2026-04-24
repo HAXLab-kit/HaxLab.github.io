@@ -119,6 +119,12 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-0.01em;color:var(--ink)}
 .news-tag.member{color:#5a5a7a}
 .news-tag.lab{color:var(--accent)}
 .news-row > span:last-child{font-size:.93rem;color:var(--ink);line-height:1.62}
+.news-content{font-size:.93rem;color:var(--ink);line-height:1.62}
+.news-content p{margin:0 0 12px}
+.news-press{display:inline-flex;flex-direction:column;gap:6px;margin-top:8px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--paper-alt);transition:border-color .2s;max-width:320px;text-decoration:none}
+.news-press:hover{border-color:var(--accent)}
+.news-press img{width:100%;height:auto;border-radius:4px;display:block}
+.news-press-label{font-family:'Montserrat',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
 
 /* ===== Director Card ===== */
 .director-card{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:start;padding:40px 0;margin-bottom:60px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .2s}
