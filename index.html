@@ -1,474 +1,2011 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAX Lab - Human-centered AX Lab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAX Lab - Human-centered AX Lab(HAX Lab)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo" data-section="home">
-                <img src="images/home/logo.jpg" alt="HAX Lab Logo">
-                <span>HAX Lab</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-                <li><a href="#news" class="nav-link" data-section="news">News</a></li>
-                <li><a href="#people" class="nav-link" data-section="people">People</a></li>
-                <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
-                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
-                <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
-                <li><a href="#courses" class="nav-link" data-section="courses">Courses</a></li>
-                <li><a href="#awards" class="nav-link" data-section="awards">Awards</a></li>
-                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
-                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" data-section="home">
+          <img src="images/home/logo.jpg" alt="HAX Lab Logo" />
+          <span>HAX Lab</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#home" class="nav-link active" data-section="home">Home</a>
+          </li>
+          <li><a href="#news" class="nav-link" data-section="news">News</a></li>
+          <li>
+            <a href="#people" class="nav-link" data-section="people">People</a>
+          </li>
+          <li>
+            <a href="#research" class="nav-link" data-section="research"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#publications" class="nav-link" data-section="publications"
+              >Publications</a
+            >
+          </li>
+          <li>
+            <a href="#courses" class="nav-link" data-section="courses"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a href="#awards" class="nav-link" data-section="awards">Awards</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav-link" data-section="gallery"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- ============ HOME ============ -->
-    <section id="home" class="section hero-section">
-        <div class="hero-bg">
-            <img src="images/home/group.jpg" alt="">
+    <section id="home" class="section home-hero home-part">
+      <div class="container">
+        <div class="home-hero-inner">
+          <p class="home-eyebrow">
+            Human-Computer Interaction · Extended Reality Research
+          </p>
+          <h1 class="home-title">
+            Human-centered AX Lab <br />
+            (HAX Lab)
+          </h1>
+          <p class="home-subtitle">
+            A research laboratory dedicated to advancing
+            <strong>Extended Reality (XR)</strong> - Virtual Reality, Augmented
+            Reality, Mixed Reality, and Metaverse - by exploring seamless and
+            intuitive interactions between humans and digital contents.
+          </p>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Human-centered<br>AX Lab</h1>
-            <p class="hero-subtitle">Extended Reality · VR · AR · MR · HCI · Metaverse</p>
-        </div>
-    </section>
-
-    <section class="section about-section home-part">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/home/group.jpg" alt="HAX Lab Group Photo">
-                </div>
-                <div class="about-text">
-                    <h2>About HAX Lab</h2>
-                    <p>HAX Lab focuses on advancing <strong>Extended Reality</strong> technologies including VR, AR, MR, and Metaverse, emphasizing intuitive <strong>human-computer interactions</strong> with digital content.</p>
-                    <p>We explore multimodal interaction, immersive environments, collaborative systems, and embodied XR interaction at <strong>Kumoh National Institute of Technology</strong>.</p>
-                    <div class="about-stats">
-                        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Research Areas</span></div>
-                        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Projects</span></div>
-                        <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Publications</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <figure class="main-figure">
+          <img src="images/mainfigure.png" alt="HAX Lab Research Overview" />
+          <figcaption>
+            Research themes of HAX Lab - Multimodal, Immersive, Collaborative,
+            and Embodied XR Interaction for human-centered extended reality.
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="section highlights-section home-part">
-        <div class="container">
-            <h2 class="section-title">Latest News</h2>
-            <div class="highlights-grid">
-                <div class="highlight-card"><span class="hl-tag grant">Grant</span><p>NRF 신진연구자지원사업 선정 - "XR-Physical AI 기반 Human-Digital Twin 인터랙션"</p><span class="hl-date">2026.3.13</span></div>
-                <div class="highlight-card"><span class="hl-tag conf">Conference</span><p>ACM VRST 2025 Paper & Demo Presentation</p><span class="hl-date">2025.11.12</span></div>
-                <div class="highlight-card"><span class="hl-tag conf">Conference</span><p>IEEE ISMAR 2025: "What Makes Object Referencing Clear?"</p><span class="hl-date">2025.10.10</span></div>
-                <div class="highlight-card"><span class="hl-tag paper">Paper</span><p>IEEE Access (SCIE) - Head-Driven Motion Estimation in VR</p><span class="hl-date">2025.5.7</span></div>
-            </div>
-            <div class="section-action"><a href="#news" class="btn-more" data-section="news">View All News →</a></div>
+      <div class="container">
+        <h2 class="section-title centered">Latest News</h2>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <span class="hl-tag grant">Grant</span>
+            <p>
+              Selected for the NRF Young Investigator Research Program (신진연구
+              A) - "XR-Physical AI-Based Human-Digital Twin Interaction for
+              Expanding the Everyday Perception of the Visually Impaired"
+            </p>
+            <span class="hl-date">2026.3.13</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-tag conf">Conference</span>
+            <p>ACM VRST 2025 - Paper & Demo Presentation (Canada)</p>
+            <span class="hl-date">2025.11.12</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-tag conf">Conference</span>
+            <p>
+              IEEE ISMAR 2025 - "What Makes Object Referencing Clear?"
+              Presentation
+            </p>
+            <span class="hl-date">2025.10.10</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-tag paper">Paper</span>
+            <p>
+              IEEE Access (SCIE) - "A Head-Driven Algorithm for Estimating Upper
+              and Lower Body Motion in VR"
+            </p>
+            <span class="hl-date">2025.5.7</span>
+          </div>
         </div>
-    </section>
-
-    <section class="section rp-section home-part">
-        <div class="container">
-            <h2 class="section-title">Research Areas</h2>
-            <div class="rp-grid">
-                <div class="rp-card"><img src="images/research/multimodal1.jpg" alt=""><div class="rp-body"><h3>Multimodal Interaction</h3><p>Gaze, speech, and touch for collaborative XR</p></div></div>
-                <div class="rp-card"><img src="images/research/immersive1.jpg" alt=""><div class="rp-body"><h3>Immersive Interaction</h3><p>Virtual grasping and accessible VR experiences</p></div></div>
-                <div class="rp-card"><img src="images/research/collab1.jpg" alt=""><div class="rp-body"><h3>Collaborative Interaction</h3><p>Multi-user virtual assembly simulations</p></div></div>
-                <div class="rp-card"><img src="images/research/embodied1.jpg" alt=""><div class="rp-body"><h3>Embodied XR Interaction</h3><p>Motion estimation and avatar interaction</p></div></div>
-            </div>
+        <div class="section-action">
+          <a href="#news" class="btn-more" data-section="news"
+            >View All News →</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- ============ NEWS ============ -->
-    <section id="news" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">News</h2>
-            <div class="news-list">
-                <div class="news-row"><span class="news-date">2026.3.13</span><span class="news-tag grant">Grant</span><span>NRF 신진연구자지원사업 선정 - "시각장애인의 일상 인지 확장을 위한 XR-Physical AI 기반 Human-Digital Twin 인터랙션" (2026-2029)</span></div>
-                <div class="news-row"><span class="news-date">2025.11.25</span><span class="news-tag member">Member</span><span>이동희 연구원 합류</span></div>
-                <div class="news-row"><span class="news-date">2025.11.24</span><span class="news-tag grant">Grant</span><span>RISE 사업 "AI 기반 시설 이상탐지 및 예지보전 솔루션" 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2025.11.12</span><span class="news-tag conf">Conf</span><span>ACM VRST 2025 Demo: "Multi-User VR Assembly and Manufacture Design"</span></div>
-                <div class="news-row"><span class="news-date">2025.11.12</span><span class="news-tag conf">Conf</span><span>ACM VRST 2025 Paper: "Trade-offs in Virtual Grasping" (Presenter: Jemin Lee)</span></div>
-                <div class="news-row"><span class="news-date">2025.10.10</span><span class="news-tag conf">Conf</span><span>IEEE ISMAR 2025: "What Makes Object Referencing Clear?" (Presenter: Jeonghyeon Kim)</span></div>
-                <div class="news-row"><span class="news-date">2025.9.14</span><span class="news-tag paper">Paper</span><span>ACM VRST 2025 논문 채택 (acceptance rate: 27%)</span></div>
-                <div class="news-row"><span class="news-date">2025.9.3</span><span class="news-tag paper">Paper</span><span>ACM VRST 2025 Conditionally Accepted</span></div>
-                <div class="news-row"><span class="news-date">2025.8.5</span><span class="news-tag paper">Paper</span><span>IEEE ISMAR 2025 논문 채택 (acceptance rate: 21.1%)</span></div>
-                <div class="news-row"><span class="news-date">2025.5.21</span><span class="news-tag member">Member</span><span>김태완 연구원 합류</span></div>
-                <div class="news-row"><span class="news-date">2025.5.7</span><span class="news-tag paper">Paper</span><span>IEEE Access 게재 - "Head-Driven Algorithm for Estimating Upper and Lower Body Motion"</span></div>
-                <div class="news-row"><span class="news-date">2025.5.7</span><span class="news-tag grant">Grant</span><span>국립과학수사연구원 화재현장 복원 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2025.4.30</span><span class="news-tag paper">Paper</span><span>Sensors 게재 - "ITap: Index Finger Tap Interaction by Gaze"</span></div>
-                <div class="news-row"><span class="news-date">2025.4.26</span><span class="news-tag conf">Conf</span><span>CHI 2025 참석 (Yokohama, Japan)</span></div>
-                <div class="news-row"><span class="news-date">2025.4.15</span><span class="news-tag grant">Grant</span><span>KETI 디지털트윈 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2025.3.30</span><span class="news-tag grant">Grant</span><span>보험개발원 교통사고 영상 분석 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2025.3.6</span><span class="news-tag paper">Paper</span><span>Electronics 게재 - Immersive VR Navigation for Accessibility</span></div>
-                <div class="news-row"><span class="news-date">2025.1.1</span><span class="news-tag grant">Grant</span><span>KETI 디지털트윈 연계 ICT 기술 발굴 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2024.9.10</span><span class="news-tag paper">Paper</span><span>디지털콘텐츠학회 논문지 2편 게재</span></div>
-                <div class="news-row"><span class="news-date">2024.7.22</span><span class="news-tag grant">Grant</span><span>AI 기반 국방 제품 설계 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2024.7.8</span><span class="news-tag member">Member</span><span>강형준, 김구, 김정현, 임준석 합류</span></div>
-                <div class="news-row"><span class="news-date">2024.6.1</span><span class="news-tag grant">Grant</span><span>Spatial Computing XR 멀티모달 인터랙션 과제 선정</span></div>
-                <div class="news-row"><span class="news-date">2024.5.23</span><span class="news-tag member">Member</span><span>인턴 4명 합류</span></div>
-                <div class="news-row"><span class="news-date">2024.3.4</span><span class="news-tag member">Member</span><span>이기공, 이제민 합류</span></div>
-                <div class="news-row"><span class="news-date">2024.1.1</span><span class="news-tag lab">Lab</span><span>Extended Reality &amp; Metaverse Lab 개설, 대학원생 모집 시작</span></div>
-            </div>
+    <section id="news" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">News</h2>
+        <div class="news-list">
+          <div class="news-row">
+            <span class="news-date">2026.3.13</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the NRF Young Investigator Research
+              Program (신진연구 A) with the project "Research on XR-Physical
+              AI-Based Human-Digital Twin Interaction for Expanding the Everyday
+              Perception of the Visually Impaired."</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.11.25</span
+            ><span class="news-tag member">Member</span
+            ><span>Donghee Lee has joined our lab. Welcome!</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.11.24</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "AI-based facility anomaly
+              detection and predictive maintenance solution" project with the
+              Regional Innovation System &amp; Education (RISE) Program!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.11.12</span
+            ><span class="news-tag conf">Conf</span
+            ><span
+              >Conducted a demo session titled "Multi-User VR Assembly Design:
+              Multimodal Object Modeling and High-Fidelity Gesture Interaction
+              with WebGL Integration" at ACM VRST 2025.</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.11.12</span
+            ><span class="news-tag conf">Conf</span
+            ><span
+              >Gave a presentation at ACM VRST 2025, presenting our paper
+              "Trade-offs in Virtual Grasping: The Interplay of Interaction
+              Fidelity and Object Affordance" by Jemin Lee.</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.10.10</span
+            ><span class="news-tag conf">Conf</span
+            ><span
+              >Gave a presentation at IEEE ISMAR 2025, presenting our paper
+              "What Makes Object Referencing Clear? Multimodal Strategies for
+              Shared Understanding in XR Collaboration." by Jeonghyeon
+              Kim.</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.9.14</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been accepted to present our paper, "Trade-offs in
+              Virtual Grasping: The Interplay of Interaction Fidelity and Object
+              Affordance" (Jemin Lee, Jeonghyeon Kim, Hyeongjun Kang, Hoon Ryu,
+              and Youngwon Kim), at a top-tier BK21 conference in Computer
+              Science, the ACM Symposium on Virtual Reality Software and
+              Technology (VRST) 2025 (Acceptance Rate: 27%).</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.9.3</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >Our paper has been conditionally accepted to ACM Symposium on
+              Virtual Reality Software and Technology (VRST) 2025!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.8.5</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been accepted to present our paper, "What Makes Object
+              Referencing Clear? Multimodal Strategies for Shared Understanding
+              in XR Collaboration" (Jeonghyeon Kim, Jemin Lee, and Youngwon
+              Kim), at a top-tier BK21 conference in Computer Science, IEEE
+              ISMAR 2025 (Acceptance Rate: 21.1%). Excellent work done by
+              undergraduate students!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.5.21</span
+            ><span class="news-tag member">Member</span
+            ><span>Taewan Kim has joined our lab. Welcome!</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.5.7</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been published in IEEE Access with our paper, "A
+              Head-Driven Algorithm for Estimating Upper and Lower Body Motion
+              in Virtual Reality Environments" (Jemin Lee, Jeonghyeon Kim, and
+              Youngwon Kim). Excellent work done by undergraduate
+              students!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.5.7</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Automated Reconstruction of Fire
+              Scenes and VR-based Immersive Investigation Technology" project
+              with the National Forensic Service!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.4.30</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been published in Sensors with our paper, "ITap: Index
+              Finger Tap Interaction by Gaze and Tabletop Integration"
+              (Jeonghyeon Kim, Jemin Lee, Jung-Hoon Ahn, and Youngwon
+              Kim).</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.4.26</span
+            ><span class="news-tag conf">Conf</span
+            ><span
+              >We have attended CHI 2025 in Yokohama, Japan. Hopefully we will
+              be presenting in Barcelona next year :)</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.4.15</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Digital Twin Linked ICT Technology
+              based Research" project with the Korea Electronics Technology
+              Institute (KETI)!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.3.30</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Development of a Traffic Accident
+              Video Analysis System" project with the Korea Insurance
+              Development Institute!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.3.6</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been published in Electronics with our paper, "Immersive
+              Interaction for Inclusive Virtual Reality Navigation: Enhancing
+              Accessibility for Socially Underprivileged Users" (Jeonghyeon Kim,
+              Jung-Hoon Ahn, and Youngwon Kim).</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2025.1.1</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Digital Twin Linked ICT Technology
+              based Research" project with the Korea Electronics Technology
+              Institute (KETI)!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.9.10</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been published in the Journal of the Digital Content with
+              our paper, "In-XR Spread Interaction-Based Magnifying Display for
+              Users with Reduced Vision."</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.9.10</span
+            ><span class="news-tag paper">Paper</span
+            ><span
+              >We have been published in the Journal of the Digital Content with
+              our paper, "User's Controller and Elbow-Based Calibration
+              Technique for Realistic Avatar Creation in an Extended Reality
+              Environment."</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.7.22</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Large-Scale AI-based defense
+              product design and maintenance service demonstration
+              project"!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.7.8</span
+            ><span class="news-tag member">Member</span
+            ><span
+              >Hyeongjun Kang, Gu Kim, Jeonghyeon Kim and Junseok Im have joined
+              our lab. Welcome!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.6.1</span
+            ><span class="news-tag grant">Grant</span
+            ><span
+              >We have been selected for the "Spatial computing XR multimodal
+              interaction technology development project"!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.5.23</span
+            ><span class="news-tag member">Member</span
+            ><span
+              >Hyeongjun Kang, Gu Kim, Jeonghyeon Kim and Junseok Im have joined
+              our lab as Research Interns. Welcome!</span
+            >
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.3.4</span
+            ><span class="news-tag member">Member</span
+            ><span>Kikong Lee and Jemin Lee have joined our lab. Welcome!</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2024.1.1</span
+            ><span class="news-tag lab">Lab</span
+            ><span
+              >Extended Reality (XR) &amp; Metaverse Lab is now OPEN (Under
+              Construction)! We're currently recruiting passionate graduate
+              &amp; undergraduate students!</span
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ============ PEOPLE ============ -->
-    <section id="people" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">People</h2>
+    <section id="people" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">People</h2>
 
-            <!-- Director -->
-            <div class="director-card clickable" data-person="prof_kim">
-                <div class="director-photo"><img src="images/people/prof_kim.jpg" alt="Prof. Youngwon Kim"></div>
-                <div class="director-info">
-                    <h3>Youngwon Kim <span class="name-kr">김영원</span></h3>
-                    <p class="role">Assistant Professor, Director</p>
-                    <p class="dept">Department of Computer Software Engineering</p>
-                    <p class="affil">Kumoh National Institute of Technology</p>
-                    <div class="interest-tags"><span>XR</span><span>VR</span><span>AR</span><span>MR</span><span>HCI</span><span>Metaverse</span></div>
-                    <p class="email"><i class="fas fa-envelope"></i> kim01@kumoh.ac.kr</p>
-                </div>
+        <!-- Director -->
+        <div class="director-card clickable" data-person="prof_kim">
+          <div class="director-photo">
+            <img src="images/people/prof_kim.jpg" alt="Prof. Youngwon Kim" />
+          </div>
+          <div class="director-info">
+            <h3>Youngwon Kim <span class="name-kr">김영원</span></h3>
+            <p class="role">Assistant Professor, Director</p>
+            <p class="dept">Department of Computer Software Engineering</p>
+            <p class="affil">Kumoh National Institute of Technology</p>
+            <div class="interest-tags">
+              <span>XR</span><span>VR</span><span>AR</span><span>MR</span
+              ><span>HCI</span><span>Metaverse</span>
             </div>
-
-            <h3 class="group-title">M.S. Students</h3>
-            <div class="people-grid">
-                <div class="person-card clickable" data-person="lee_jemin"><img src="images/people/lee_jemin.jpg" alt="Jemin Lee"><h4>Jemin Lee <span class="name-kr">이제민</span></h4><p class="since">Since 2025-2</p><p class="interest">VR, Games, Convergence Contents</p><p class="email"><i class="fas fa-envelope"></i> char3941@kumoh.ac.kr</p></div>
-                <div class="person-card clickable" data-person="kim_jeonghyeon"><img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim"><h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4><p class="since">Since 2025-2</p><p class="interest">Collaboration, Multimodal Interaction</p><p class="email"><i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr</p></div>
-            </div>
-
-            <h3 class="group-title">Undergraduate Students</h3>
-            <div class="people-grid">
-                <div class="person-card clickable" data-person="kang_hyeongjun"><img src="images/people/kang_hyeongjun.jpg" alt="Hyeongjun Kang"><h4>Hyeongjun Kang <span class="name-kr">강형준</span></h4><p class="since">Since 2024-2</p><p class="interest">Immersive Technologies, XR Contents</p><p class="email"><i class="fas fa-envelope"></i> joh0816@gmail.com</p></div>
-                <div class="person-card clickable" data-person="lee_donghee"><img src="images/people/lee_donghee.jpg" alt="Donghee Lee"><h4>Donghee Lee <span class="name-kr">이동희</span></h4><p class="since">Since 2026-1</p><p class="interest">VR, HCI, Games</p><p class="email"><i class="fas fa-envelope"></i> furyburst@naver.com</p></div>
-            </div>
-
-            <h3 class="group-title">Research Intern</h3>
-            <div class="people-grid">
-                <div class="person-card clickable" data-person="nam_yoongi"><img src="images/people/nam_yoongi.jpg" alt="Yoongi Nam"><h4>Yoongi Nam <span class="name-kr">남윤기</span></h4><p class="since">Since 2025-2 (Dasso)</p><p class="email"><i class="fas fa-envelope"></i> nyk510@kumoh.ac.kr</p></div>
-            </div>
-
-            <h3 class="group-title">Academic Break</h3>
-            <div class="people-grid">
-                <div class="person-card clickable" data-person="lee_kikong"><img src="images/people/lee_kikong.jpg" alt="Kikong Lee"><h4>Kikong Lee <span class="name-kr">이기공</span></h4><p class="since">Since 2024-1</p><p class="interest">Metaverse Contents, XR Games</p><p class="email"><i class="fas fa-envelope"></i> dlrlrhd@gmail.com</p></div>
-            </div>
-
-            <h3 class="group-title">Alumni</h3>
-            <div class="people-grid">
-                <div class="person-card clickable" data-person="kim_taewan"><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQSm-wUQ_UxtGsOOO3Jkl8P4bDiD9rFSrWQMq2B-dkLrH-jEfBP7uDkgCprUl7Ale3DGC8d_IsywaXzuIeNCRWAW6KSvHPEmLH7Sp0XR8sv2mvCIyfEvun0r-JhIiefzsdODKMJyegnQ46siyvGQpoLu7uAaUQvec01fKlzi1FrLbn9XE3SIfLIlufGPnJ4OSgdsXuNNXQMk2pHIRH7b691P7NfaV_ByWdm=w400" alt="Taewan Kim"><h4>Taewan Kim <span class="name-kr">김태완</span></h4><p class="since">2025-1 to 2026-1, B.S.</p><p class="interest">Now at KETI</p><p class="email"><i class="fas fa-envelope"></i> kimtaeyan21@naver.com</p></div>
-                <div class="person-card clickable" data-person="im_junseok"><img src="https://lh3.googleusercontent.com/sitesv/APaQ0STQ89sd1fWYGPS512za-c9CouX4bG0NJz1KL2B9UbdBv-aQV6UpJ53qgGNw_Bl-MvtPZd9pQaWveRi-BlfCyE35gX1YD0yDTxxd2uzU-bCBI-Bc43lu5j_5WbewUzPHj61cWmhKAHs4snUHYMLxTvwIs8LfGmO5HGW4KRwIdSaMriMUyblpVtynrQV8kEJ2JMNJiLrgD2dPuTEpkpj_1gWNpGwye1wjQHDo5ss=w400" alt="Junseok Im"><h4>Junseok Im <span class="name-kr">임준석</span></h4><p class="since">2024-2 to 2026-1, B.S.</p><p class="email"><i class="fas fa-envelope"></i> ij8337@naver.com</p></div>
-                <div class="person-card clickable" data-person="kim_gu"><img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQUbFSV-z0BI_QcDta7jjNod4kRtyqnbyQTxZuk03N2sUND5xga0b3WjXPuN6Bj0bFnx=w400" alt="Gu Kim"><h4>Gu Kim <span class="name-kr">김구</span></h4><p class="since">2024-2 to 2026-1, B.S.</p><p class="email"><i class="fas fa-envelope"></i> hadove02@naver.com</p></div>
-                <div class="person-card clickable" data-person="lee_jemin_alumni"><img src="images/people/lee_jemin.jpg" alt="Jemin Lee"><h4>Jemin Lee <span class="name-kr">이제민</span></h4><p class="since">B.S. 2025.08</p><p class="interest">Now M.S. student at KIT</p><p class="email"><i class="fas fa-envelope"></i> char3941@kumoh.ac.kr</p></div>
-                <div class="person-card clickable" data-person="kim_jeonghyeon_alumni"><img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim"><h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4><p class="since">B.S. 2025.08</p><p class="interest">Now M.S. student at KIT</p><p class="email"><i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr</p></div>
-            </div>
+            <p class="email">
+              <i class="fas fa-envelope"></i> kim01@kumoh.ac.kr
+            </p>
+          </div>
         </div>
+
+        <h3 class="group-title">M.S. Students</h3>
+        <div class="people-grid">
+          <div class="person-card clickable" data-person="lee_jemin">
+            <img src="images/people/lee_jemin.jpg" alt="Jemin Lee" />
+            <h4>Jemin Lee <span class="name-kr">이제민</span></h4>
+            <p class="since">Since 2025-2</p>
+            <p class="interest">VR, Games, Convergence Contents</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> char3941@kumoh.ac.kr
+            </p>
+          </div>
+          <div class="person-card clickable" data-person="kim_jeonghyeon">
+            <img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim" />
+            <h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4>
+            <p class="since">Since 2025-2</p>
+            <p class="interest">Collaboration, Multimodal Interaction</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr
+            </p>
+          </div>
+        </div>
+
+        <h3 class="group-title">Undergraduate Students</h3>
+        <div class="people-grid">
+          <div class="person-card clickable" data-person="kang_hyeongjun">
+            <img src="images/people/kang_hyeongjun.jpg" alt="Hyeongjun Kang" />
+            <h4>Hyeongjun Kang <span class="name-kr">강형준</span></h4>
+            <p class="since">Since 2024-2</p>
+            <p class="interest">Immersive Technologies, XR Contents</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> joh0816@gmail.com
+            </p>
+          </div>
+          <div class="person-card clickable" data-person="lee_donghee">
+            <img src="images/people/lee_donghee.jpg" alt="Donghee Lee" />
+            <h4>Donghee Lee <span class="name-kr">이동희</span></h4>
+            <p class="since">Since 2026-1</p>
+            <p class="interest">VR, HCI, Games</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> furyburst@naver.com
+            </p>
+          </div>
+          <div class="person-card recruiting">
+            <div class="recruiting-icon"><i class="fas fa-user-plus"></i></div>
+            <h4>Recruiting</h4>
+            <p class="since">Position Open</p>
+            <p class="interest">TBD</p>
+          </div>
+        </div>
+
+        <h3 class="group-title">Research Intern</h3>
+        <div class="people-grid">
+          <div class="person-card clickable" data-person="nam_yoongi">
+            <img src="images/people/nam_yoongi.jpg" alt="Yoongi Nam" />
+            <h4>Yoongi Nam <span class="name-kr">남윤기</span></h4>
+            <p class="since">Since 2025-2 (Dasso)</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> nyk510@kumoh.ac.kr
+            </p>
+          </div>
+        </div>
+
+        <h3 class="group-title">Academic Break</h3>
+        <div class="people-grid">
+          <div class="person-card clickable" data-person="lee_kikong">
+            <img src="images/people/lee_kikong.jpg" alt="Kikong Lee" />
+            <h4>Kikong Lee <span class="name-kr">이기공</span></h4>
+            <p class="since">Since 2024-1</p>
+            <p class="interest">Metaverse Contents, XR Games</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> dlrlrhd@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <h3 class="group-title">Alumni</h3>
+        <div class="people-grid">
+          <div class="person-card">
+            <img src="images/people/김태완.png" alt="Taewan Kim" />
+            <h4>Taewan Kim <span class="name-kr">김태완</span></h4>
+            <p class="since">2025-1 ~ 2026-1 · B.S. 2026.02</p>
+            <p class="interest">
+              Now at Korea Electronics Technology Institute (KETI)
+            </p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> kimtaeyan21@naver.com
+            </p>
+          </div>
+          <div class="person-card">
+            <img src="images/people/임준석.png" alt="Junseok Im" />
+            <h4>Junseok Im <span class="name-kr">임준석</span></h4>
+            <p class="since">2024-2 ~ 2026-1 · B.S. 2026.02</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> ij8337@naver.com
+            </p>
+          </div>
+          <div class="person-card">
+            <img src="images/people/김구.png" alt="Gu Kim" />
+            <h4>Gu Kim <span class="name-kr">김구</span></h4>
+            <p class="since">2024-2 ~ 2026-1 · B.S. 2026.02</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> hadove02@naver.com
+            </p>
+          </div>
+          <div class="person-card">
+            <img src="images/people/lee_jemin.jpg" alt="Jemin Lee" />
+            <h4>Jemin Lee <span class="name-kr">이제민</span></h4>
+            <p class="since">2024-1 ~ 2025-1 · B.S. 2025.08</p>
+            <p class="interest">Now M.S. student at KIT</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> char3941@kumoh.ac.kr
+            </p>
+          </div>
+          <div class="person-card">
+            <img src="images/people/kim_jeonghyeon.jpg" alt="Jeonghyeon Kim" />
+            <h4>Jeonghyeon Kim <span class="name-kr">김정현</span></h4>
+            <p class="since">2024-2 ~ 2025-1 · B.S. 2025.08</p>
+            <p class="interest">Now M.S. student at KIT</p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> dnrgusrla1@kumoh.ac.kr
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ PERSON DETAIL ============ -->
-    <section id="person-detail" class="section page-section" style="display:none;">
-        <div class="container">
-            <button class="back-btn" id="backToPeople"><i class="fas fa-arrow-left"></i> Back to People</button>
-            <div class="profile-detail" id="profileDetail"></div>
-        </div>
+    <section
+      id="person-detail"
+      class="section page-section"
+      style="display: none"
+    >
+      <div class="container">
+        <button class="back-btn" id="backToPeople">
+          <i class="fas fa-arrow-left"></i> <span>Back to People</span>
+        </button>
+        <div class="profile-detail" id="profileDetail"></div>
+      </div>
     </section>
 
     <!-- ============ RESEARCH ============ -->
-    <section id="research" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Research</h2>
+    <section id="research" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
 
-            <div class="research-block">
-                <h3 class="ra-title"><i class="fas fa-hand-pointer"></i> Multimodal Interaction</h3>
-                <div class="ra-content">
-                    <div class="ra-images">
-                        <img src="images/research/multimodal1.jpg" alt="">
-                        <img src="images/research/multimodal2.jpg" alt="">
-                    </div>
-                    <ul><li>Exploring multimodal interaction techniques for collaborative environments combining gaze, speech, and touch</li><li>Real-time multi-user collaboration in simulated manufacturing environments</li><li>Tabletop touchpad technique enabling finger-based interaction combined with gaze input</li></ul>
-                </div>
-            </div>
-
-            <div class="research-block">
-                <h3 class="ra-title"><i class="fas fa-vr-cardboard"></i> Immersive Interaction</h3>
-                <div class="ra-content">
-                    <div class="ra-images">
-                        <img src="images/research/immersive1.jpg" alt="">
-                        <img src="images/research/immersive2.jpg" alt="">
-                        <img src="images/research/immersive3.jpg" alt="">
-                    </div>
-                    <ul><li>2D image processing into cubemap format for fully immersive 3D road view VR</li><li>Gesture-based controls for digitally marginalized users</li><li>Investigation of virtual grasping methods across diverse object shapes</li><li>Analysis of objective and subjective measures</li></ul>
-                </div>
-            </div>
-
-            <div class="research-block">
-                <h3 class="ra-title"><i class="fas fa-users"></i> Collaborative Interaction</h3>
-                <div class="ra-content">
-                    <div class="ra-images">
-                        <img src="images/research/collab1.jpg" alt="">
-                    </div>
-                    <ul><li>Interaction techniques enabling intuitive real-time collaboration in multi-user VR</li><li>Assembly simulation with gesture, gaze, and speech modalities</li></ul>
-                </div>
-            </div>
-
-            <div class="research-block">
-                <h3 class="ra-title"><i class="fas fa-person-walking"></i> Embodied XR Interaction</h3>
-                <div class="ra-content">
-                    <div class="ra-images">
-                        <img src="images/research/embodied1.jpg" alt="">
-                        <img src="images/research/embodied2.jpg" alt="">
-                    </div>
-                    <ul><li>Upper and lower body motion estimation using only head movement data</li><li>Hardware-free approach eliminating external sensors</li><li>Real-time avatar interaction for multi-user VR</li></ul>
-                </div>
-            </div>
+        <div class="research-block">
+          <div class="ra-text">
+            <h3 class="ra-title">
+              <i class="fas fa-hand-pointer"></i> Multimodal Interaction
+            </h3>
+            <p class="ra-lead">
+              We explore multimodal interaction techniques for collaborative
+              environments, combining modalities such as gaze, speech, and
+              touch.
+            </p>
+            <ul>
+              <li>
+                Real-time multi-user collaboration in simulated manufacturing
+                environments
+              </li>
+              <li>
+                Tabletop touchpad technique enabling finger-based interaction
+                combined with gaze input
+              </li>
+              <li>Overcoming conventional pinch gesture limitations</li>
+            </ul>
+          </div>
+          <div class="ra-gallery g-2">
+            <img
+              src="images/research/multimodal1.jpg"
+              alt="Multimodal Interaction"
+            />
+            <img
+              src="images/research/multimodal2.jpg"
+              alt="Multimodal Interaction"
+            />
+          </div>
         </div>
+
+        <div class="research-block reverse">
+          <div class="ra-text">
+            <h3 class="ra-title">
+              <i class="fas fa-vr-cardboard"></i> Immersive Interaction
+            </h3>
+            <p class="ra-lead">
+              We investigate immersive VR experiences and accessible interaction
+              for diverse users.
+            </p>
+            <ul>
+              <li>
+                2D image processing into cubemap format for fully immersive 3D
+                road view VR
+              </li>
+              <li>Gesture-based controls for digitally marginalized users</li>
+              <li>
+                Investigation of virtual grasping methods across diverse object
+                shapes
+              </li>
+              <li>Analysis of objective and subjective measures</li>
+            </ul>
+          </div>
+          <div class="ra-gallery g-3">
+            <img
+              src="images/research/immersive1.jpg"
+              alt="Immersive Interaction"
+            />
+            <img
+              src="images/research/immersive2.jpg"
+              alt="Immersive Interaction"
+            />
+            <img
+              src="images/research/immersive3.jpg"
+              alt="Immersive Interaction"
+            />
+          </div>
+        </div>
+
+        <div class="research-block">
+          <div class="ra-text">
+            <h3 class="ra-title">
+              <i class="fas fa-users"></i> Collaborative Interaction
+            </h3>
+            <p class="ra-lead">
+              We develop interaction techniques that enable users to collaborate
+              easily and intuitively in real-time multi-user virtual
+              environments for assembly simulations.
+            </p>
+            <ul>
+              <li>Combining gesture, gaze, and speech modalities</li>
+              <li>Shared virtual space design for multi-user assembly</li>
+            </ul>
+          </div>
+          <div class="ra-gallery g-1">
+            <img
+              src="images/research/collab1.jpg"
+              alt="Collaborative Interaction"
+            />
+          </div>
+        </div>
+
+        <div class="research-block reverse">
+          <div class="ra-text">
+            <h3 class="ra-title">
+              <i class="fas fa-person-walking"></i> Embodied XR Interaction
+            </h3>
+            <p class="ra-lead">
+              We estimate full-body motion in VR using only head movement data,
+              eliminating the need for external sensors.
+            </p>
+            <ul>
+              <li>
+                Upper and lower body motion estimation using only head movement
+                data
+              </li>
+              <li>Hardware-free approach eliminating external sensors</li>
+              <li>Real-time avatar interaction for multi-user VR</li>
+            </ul>
+          </div>
+          <div class="ra-gallery g-2">
+            <img src="images/research/embodied.png" alt="Embodied XR" />
+            <img src="images/research/embodied2.png" alt="Embodied XR" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <h3 class="group-title">Ongoing</h3>
-            <div class="project-list">
-                <div class="project-card has-img"><div class="proj-img"><img src="images/projects/proj_00.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge ongoing">Ongoing</span><h4>XR-Physical AI 기반 Human-Digital Twin 인터랙션</h4><p>시각장애인의 일상 인지 확장을 위한 XR-Physical AI 기반 Human-Digital Twin 인터랙션</p><div class="proj-meta"><span><i class="fas fa-building"></i> 과학기술정보통신부, NRF 신진연구자지원사업</span><span><i class="fas fa-calendar"></i> 2026 - 2029</span></div></div></div>
-                <div class="project-card has-img"><div class="proj-img"><img src="images/projects/proj_01.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge ongoing">Ongoing</span><h4>대규모 AI 기반 국방 제품 설계 및 유지보수 서비스 실증</h4><p>초거대 AI 클라우드 팜 실증 및 AI 확산 환경 조성사업</p><div class="proj-meta"><span><i class="fas fa-building"></i> 과학기술정보통신부, NIA</span><span><i class="fas fa-calendar"></i> 2024 - 2026</span></div></div></div>
-                <div class="project-card has-img"><div class="proj-img"><img src="images/projects/proj_02.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge ongoing">Ongoing</span><h4>화재현장 자동 복원 및 VR 기반 몰입형 수사 기술</h4><p>화재현장 3D 복원 및 VR 기반 몰입형 수사 지원 시스템 개발</p><div class="proj-meta"><span><i class="fas fa-building"></i> 국립과학수사연구원</span><span><i class="fas fa-calendar"></i> 2025 - 2027</span></div></div></div>
-                <div class="project-card has-img"><div class="proj-img"><img src="images/projects/proj_03.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge ongoing">Ongoing</span><h4>AI 기반 시설 이상탐지 및 예지보전 솔루션</h4><p>AI 기반 시설물 이상탐지 및 예지보전 기술 개발</p><div class="proj-meta"><span><i class="fas fa-building"></i> RISE 사업</span><span><i class="fas fa-calendar"></i> 2025 - 2026</span></div></div></div>
+    <section id="projects" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <h3 class="group-title">Ongoing</h3>
+        <div class="project-list">
+          <div class="project-card">
+            <div class="proj-logo">
+              <img src="images/projects/한국연구재단.svg" alt="NRF" />
             </div>
-            <h3 class="group-title">Completed</h3>
-            <div class="project-list">
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_04.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>디지털트윈 연계 ICT 기술 발굴 연구</h4><p>디지털트윈 연계 ICT 기술 발굴 및 실증 연구</p><div class="proj-meta"><span><i class="fas fa-building"></i> KETI</span><span><i class="fas fa-calendar"></i> 2025</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_05.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>교통사고 영상 분석 시스템 개발</h4><p>교통사고 영상 분석 및 사고 재현 시스템</p><div class="proj-meta"><span><i class="fas fa-building"></i> 보험개발원</span><span><i class="fas fa-calendar"></i> 2025</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_06.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>몰입형 XR 및 3D 인터랙션 기술 및 콘텐츠 개발</h4><p>몰입형 XR 및 3D 인터랙션을 위한 효과적인 인터랙션 기술 및 콘텐츠 개발</p><div class="proj-meta"><span><i class="fas fa-building"></i> 금오공과대학교</span><span><i class="fas fa-calendar"></i> 2024 - 2026</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_07.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>Spatial Computing XR 멀티모달 인터랙션 기술</h4><p>Apple Vision Pro 기반 Spatial Computing XR 멀티모달 인터랙션 기법 연구</p><div class="proj-meta"><span><i class="fas fa-building"></i> S Corporation</span><span><i class="fas fa-calendar"></i> 2024 - 2025</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_08.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>AI 기반 콜센터 상담사 역량 평가 시스템</h4><p>AI 기반 콜센터 상담사 역량 자동 평가 및 분석 시스템 개발</p><div class="proj-meta"><span><i class="fas fa-building"></i> 광운대학교 산학협력</span><span><i class="fas fa-calendar"></i> 2025</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_09.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>초거대 AI 기반 산학연 협업 생태계 구축</h4><p>초거대 AI 기반 산학연 협업 생태계 구축 사업</p><div class="proj-meta"><span><i class="fas fa-building"></i> 과학기술정보통신부, NIA</span><span><i class="fas fa-calendar"></i> 2024 - 2026</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_10.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>스마트 미러 및 실감 콘텐츠 기반 관광코스</h4><p>Smart Mirror and Immersive Content Based Tourism Course</p><div class="proj-meta"><span><i class="fas fa-building"></i> 문화체육관광부, KOCCA</span><span><i class="fas fa-calendar"></i> 2023</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_11.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>확장가능 파크 플랫폼 기술 개발 및 실증</h4><p>The Expandable Park Platform Technology Development and Demonstration</p><div class="proj-meta"><span><i class="fas fa-building"></i> 문화체육관광부, KOCCA</span><span><i class="fas fa-calendar"></i> 2021 - 2023</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_13.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>지능형 디지털 콘텐츠 제작 기술 개발 및 플랫폼</h4><p>Intelligent Digital Contents Production Technology Development and Platform</p><div class="proj-meta"><span><i class="fas fa-building"></i> 과학기술정보통신부, 이노폴리스</span><span><i class="fas fa-calendar"></i> 2022 - 2023</span></div></div></div>
-                <div class="project-card completed has-img"><div class="proj-img"><img src="images/projects/proj_14.jpg" alt="" loading="lazy"></div><div class="proj-body"><span class="proj-badge done">Completed</span><h4>음악 기반 의사소통 능력 향상 기능성 콘텐츠 플랫폼</h4><p>Music Based Functional Content Platform for Communication Skills Improvement</p><div class="proj-meta"><span><i class="fas fa-building"></i> 문화체육관광부, KOCCA</span><span><i class="fas fa-calendar"></i> 2020 - 2023</span></div></div></div>
-                <div class="project-card completed"><span class="proj-badge done">Completed</span><h4>가상현실 기반 범죄현장 복원</h4><p>가상현실 기반 협업 범죄현장 3D 복원 및 수사 지원 시스템</p><div class="proj-meta"><span><i class="fas fa-building"></i> 국립과학수사연구원</span><span><i class="fas fa-calendar"></i> 2014</span></div></div>
+            <div class="proj-body">
+              <span class="proj-badge ongoing">Ongoing</span>
+              <h4>
+                XR-Physical AI-based Human-Digital Twin Interaction for
+                Expanding the Everyday Perception of the Visually Impaired
+              </h4>
+              <p>
+                Develops technologies to enhance environmental perception and
+                safe mobility for visually impaired individuals, including 3D
+                reconstruction and XR-based training.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Science and ICT,
+                  NRF (Young Investigator)</span
+                ><span><i class="fas fa-calendar"></i> 2026 - 2029</span>
+              </div>
             </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-logo">
+              <img src="images/projects/nia.svg" alt="NIA" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge ongoing">Ongoing</span>
+              <h4>
+                Large-Scale AI-based Defense Product Design and Maintenance
+                Service Demonstration
+              </h4>
+              <p>
+                Demonstrates hyper-scale AI convergence service using AI and
+                spatial computing (XR) for military supply manufacturing
+                productivity.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Science and ICT,
+                  NIA</span
+                ><span><i class="fas fa-calendar"></i> 2024 - 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-logo">
+              <img
+                src="images/projects/국과수.svg"
+                alt="National Forensic Service"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge ongoing">Ongoing</span>
+              <h4>
+                Automated Reconstruction of Fire Scenes and VR-based Immersive
+                Investigation Technology
+              </h4>
+              <p>
+                Develops immersive forensic investigation tools featuring
+                context-aware interactions, multi-user collaboration, and
+                gesture recognition for fire scene analysis.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> National Forensic
+                  Service</span
+                ><span><i class="fas fa-calendar"></i> 2025 - 2027</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="proj-logo">
+              <img src="images/projects/금오공대.svg" alt="Kumoh NIT" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge ongoing">Ongoing</span>
+              <h4>
+                AI-based Facility Anomaly Detection and Predictive Maintenance
+                Solution
+              </h4>
+              <p>
+                Creates an AI-based predictive maintenance solution to detect
+                equipment failures and reduce downtime in industrial facilities.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Regional Innovation System
+                  &amp; Education (RISE) Program</span
+                ><span><i class="fas fa-calendar"></i> 2025 - 2026</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <h3 class="group-title">Completed</h3>
+        <div class="project-list">
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/keti.jpg" alt="KETI" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Research on ICT Technology Discovery Linked to Digital Twin
+              </h4>
+              <p>
+                Focuses on data visualization for Energy Storage Systems and
+                XR-based strategies including tracking technologies.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Korea Electronics Technology
+                  Institute (KETI)</span
+                ><span><i class="fas fa-calendar"></i> 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img
+                src="images/projects/보험개발원.jpg"
+                alt="Korea Insurance Development Institute"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>Development of a Traffic Accident Video Analysis System</h4>
+              <p>
+                Develops technologies for analyzing accident footage, including
+                vehicle speed and steering angle estimation from video analysis.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Korea Insurance Development
+                  Institute</span
+                ><span><i class="fas fa-calendar"></i> 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/금오공대.svg" alt="Kumoh NIT" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Development of Effective Interaction Technology and Contents for
+                Immersive XR and 3D Interaction
+              </h4>
+              <p>
+                Creates XR/metaverse interaction technology supporting
+                vulnerable populations and defense manufacturing environments.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Kumoh National Institute of
+                  Technology</span
+                ><span><i class="fas fa-calendar"></i> 2024 - 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo"><i class="fas fa-vr-cardboard"></i></div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Development of Spatial Computing XR Multimodal Interaction
+                Technology
+              </h4>
+              <p>
+                Develops multimodal interaction technology for spatial computing
+                devices such as Apple Vision Pro.
+              </p>
+              <div class="proj-meta">
+                <span><i class="fas fa-landmark"></i> S Corporation</span
+                ><span><i class="fas fa-calendar"></i> 2024 - 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img
+                src="images/projects/광운대.svg"
+                alt="Kwangwoon University"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                AI-based Competency Evaluation Model and Algorithm for QA
+                Utilization in Customer Service Agents
+              </h4>
+              <p>
+                Develops an AI-driven model inspired by the MBTI framework
+                integrating NLP and voice analysis for call center evaluation.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Kwangwoon University
+                  Industry-Academic Cooperation</span
+                ><span><i class="fas fa-calendar"></i> 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/nia.svg" alt="NIA" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Large-Scale AI-based Industry-Academia-Research Cooperation
+                Ecosystem
+              </h4>
+              <p>
+                Establishes a hyper-scale AI convergence collaboration system
+                with talent development and startup support.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Science and ICT,
+                  NIA</span
+                ><span><i class="fas fa-calendar"></i> 2024 - 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/한국콘텐츠진흥원.png" alt="KOCCA" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Smart Mirror and Immersive Content Based Tourism Course and
+                Applied Technologies
+              </h4>
+              <p>
+                Creates an immersive local history and nature tourism cultural
+                content platform for smart mirrors.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Culture, Sports
+                  and Tourism, KOCCA</span
+                ><span><i class="fas fa-calendar"></i> 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/한국콘텐츠진흥원.png" alt="KOCCA" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                The Expandable Park Platform Technology Development and
+                Demonstration based on Metaverse &amp; AI Convergence
+              </h4>
+              <p>
+                Develops a scalable support platform through metaverse-based AI
+                and immersive content commercialization.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Culture, Sports
+                  and Tourism, KOCCA</span
+                ><span><i class="fas fa-calendar"></i> 2021 - 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img
+                src="images/projects/과기부.png"
+                alt="Ministry of Science and ICT"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Intelligent Digital Contents Production Technology Development
+                and Platform Establishment Project
+              </h4>
+              <p>
+                Creates AI, blockchain, and NFT-based technologies for digital
+                content production platforms.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Science and ICT,
+                  Innopolis Foundation</span
+                ><span><i class="fas fa-calendar"></i> 2022 - 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img src="images/projects/한국콘텐츠진흥원.png" alt="KOCCA" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Development of a Music-based Functional Content Platform to
+                Improve Social and Communication Skills among Individuals with
+                Communication Deficits
+              </h4>
+              <p>
+                Develops a content support platform analyzing music activity
+                data to enhance social communication for youth and adults.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Ministry of Culture, Sports
+                  and Tourism, KOCCA</span
+                ><span><i class="fas fa-calendar"></i> 2020 - 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img
+                src="images/projects/광주정보문화산업진흥원.jpg"
+                alt="Gwangju Information & Culture Industry Promotion Agency"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Asian Community Heritage Culture Platform Construction Project
+              </h4>
+              <p>
+                Constructs a transmission model integrating cultural heritage
+                with AI and cultural technology for preservation.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> Gwangju Metropolitan City,
+                  Gwangju Information &amp; Culture Industry Promotion
+                  Agency</span
+                ><span><i class="fas fa-calendar"></i> 2020 - 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card completed">
+            <div class="proj-logo">
+              <img
+                src="images/projects/국과수.svg"
+                alt="National Forensic Service"
+              />
+            </div>
+            <div class="proj-body">
+              <span class="proj-badge done">Completed</span>
+              <h4>
+                Virtual Reality-based Collaborative Crime Scene Reconstruction
+              </h4>
+              <p>
+                Virtual reality-based collaborative 3D reconstruction of crime
+                scenes and investigation support system.
+              </p>
+              <div class="proj-meta">
+                <span
+                  ><i class="fas fa-landmark"></i> National Forensic
+                  Service</span
+                ><span><i class="fas fa-calendar"></i> 2014</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ PUBLICATIONS ============ -->
-    <section id="publications" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="pub-tabs">
-                <button class="pub-tab active" data-tab="intl-conf">International Conferences</button>
-                <button class="pub-tab" data-tab="intl-journal">International Journals (SCIE)</button>
-                <button class="pub-tab" data-tab="domestic">Domestic Journals (KCI)</button>
-                <button class="pub-tab" data-tab="patents">Patents</button>
-            </div>
-            <div class="pub-content active" id="intl-conf">
-                <table class="pub-table"><tbody>
-                    <tr><td class="pub-year">2025</td><td><strong>"Multi-User VR Assembly and Manufacture Design: Multimodal Object Modeling and High-Fidelity Gesture Interaction with WebGL Integration"</strong><br>Jeonghyeon Kim, Jemin Lee, Hyeongjun Kang, Taewan Kim, Jungsik Koo, Jiyong Park, Byungwoo Cho, Yun Young Hwa, Bumki Kim, Daeun Kim, Youngwon Kim<br><span class="pub-venue">31st ACM VRST 2025 Demo (Canada)</span></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>"Trade-offs in Virtual Grasping: The Interplay of Interaction Fidelity and Object Affordance"</strong><br>Jemin Lee*, Jeonghyeon Kim*, Hyeongjun Kang, Hoon Ryu, Youngwon Kim<br><span class="pub-venue">ACM VRST 2025 (Acceptance Rate: 27%, Canada)</span></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>"What Makes Object Referencing Clear? Multimodal Strategies for Shared Understanding in XR Collaboration"</strong><br>Jeonghyeon Kim, Jemin Lee, Youngwon Kim<br><span class="pub-venue">IEEE ISMAR 2025 (Acceptance Rate: 21.1%, South Korea)</span> <a href="https://doi.org/10.1109/ISMAR67309.2025.00014" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a></td></tr>
-                    <tr><td class="pub-year">2020</td><td><strong>"A comparative analysis on the impact of face tracker and skin segmentation onto improving the performance of real-time remote photoplethysmography"</strong><br>Kunyoung Lee, Kyungwon Jin, Youngwon Kim, Jee Hang Lee, Eui Chul Lee<br><span class="pub-venue">12th IHCI 2020 (South Korea)</span></td></tr>
-                    <tr><td class="pub-year">2019</td><td><strong>"EasyMR: Presence and Immersion of Easy Mobile Mixed Reality"</strong><br>Hyonah Choi, Youngwon R. Kim, Gerard J. Kim<br><span class="pub-venue">HCI International 2019, Springer (US)</span></td></tr>
-                    <tr><td class="pub-year">2018</td><td><strong>"A Perceptual Evaluation of GAN Real-time Synthesized Drum Sounds in a Virtual Environment"</strong><br>Minwook Chang, Youngwon R. Kim, Gerard J. Kim<br><span class="pub-venue">IEEE AIVR 2018 (Taiwan)</span></td></tr>
-                    <tr><td class="pub-year">2018</td><td><strong>"EasyMR: Easy Mixed Reality with Open Flip-on Lenses"</strong><br>Youngwon R. Kim, Gerard J. Kim<br><span class="pub-venue">APMAR 2018 (Taiwan)</span></td></tr>
-                    <tr><td class="pub-year">2017</td><td><strong>"Presence and Immersion of 'Easy' Mobile VR with Open Flip-on Lenses"</strong><br>Youngwon R. Kim, Gerard J. Kim<br><span class="pub-venue">23rd ACM VRST 2017 (Sweden)</span></td></tr>
-                    <tr><td class="pub-year">2016</td><td><strong>"HoVR-type: smartphone as a typing interface in VR using hovering"</strong><br>Youngwon R. Kim, Gerard J. Kim<br><span class="pub-venue">22nd ACM VRST 2016 (Germany)</span></td></tr>
-                    <tr><td class="pub-year">2014</td><td><strong>"Virtual Reality based Collaborative Crime Scene Simulation Environment"</strong><br>Youngwon Kim, Changhyeon Lee, Jonggil Ahn, Gerard J. Kim<br><span class="pub-venue">WFF 2014 (Korea)</span></td></tr>
-                    <tr><td class="pub-year">2014</td><td><strong>"Indoor Crime Scene Reconstruction using a Smart Phone"</strong><br>Jonggil Ahn, Youngsun Kim, Youngwon Kim, Gerard J. Kim<br><span class="pub-venue">WFF 2014 (Korea)</span></td></tr>
-                    <tr><td class="pub-year">2013</td><td><strong>"Standardization for Mixed and Augmented Reality: Activities at ISO-IEC SC 24 WG 9"</strong><br>Jaedong Lee, Youngwon Kim, Sangyoung Lee, Gerard J. Kim<br><span class="pub-venue">VRCAI 2013 (Hong Kong)</span></td></tr>
-                </tbody></table>
-            </div>
-            <div class="pub-content" id="intl-journal">
-                <table class="pub-table"><tbody>
-                    <tr><td class="pub-year">2025</td><td><strong>"A Head-Driven Algorithm for Estimating Upper and Lower Body Motion in Virtual Reality Environments"</strong><br>Jemin Lee, Jeonghyeon Kim, Youngwon Kim<br><span class="pub-venue">IEEE Access, vol. 13, pp. 76627-76637, 2025</span> <a href="https://ieeexplore.ieee.org/document/10979843" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Paper</a></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>"ITap: Index Finger Tap Interaction by Gaze and Tabletop Integration"</strong><br>Jeonghyeon Kim, Jemin Lee, Jung-Hoon Ahn, Youngwon Kim<br><span class="pub-venue">Sensors, 25(9), 2833, 2025</span> <a href="https://www.mdpi.com/1424-8220/25/9/2833" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Paper</a></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>"Immersive Interaction for Inclusive Virtual Reality Navigation: Enhancing Accessibility for Socially Underprivileged Users"</strong><br>Jeonghyeon Kim, Jung-Hoon Ahn, Youngwon Kim<br><span class="pub-venue">Electronics, 14(5), 1046, 2025</span> <a href="https://www.mdpi.com/2079-9292/14/5/1046" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Paper</a></td></tr>
-                    <tr><td class="pub-year">2022</td><td><strong>"Development of a Virtual Object Weight Recognition Algorithm Based on Pseudo-Haptics and the Development of Immersion Evaluation Technology"</strong><br>Eunjin Son, Hayoung Song, Seonghyeon Nam, Youngwon Kim<br><span class="pub-venue">Electronics, 11(14), 2274, 2022</span></td></tr>
-                    <tr><td class="pub-year">2021</td><td><strong>"Research on Contactless Bio-Signal Measurement Technology for Improving Social Awareness of Individuals with Communication Challenges"</strong><br>Nam Seonghyeon, Hayoung Song, Youngwon Kim<br><span class="pub-venue">Applied Sciences, 11(11), 5169, 2021</span></td></tr>
-                    <tr><td class="pub-year">2020</td><td><strong>"Blurry Touch Finger: Touch-Based Interaction for Mobile VR with Clip-on Lenses"</strong><br>Youngwon R. Kim, Suhan Park, Gerard J. Kim<br><span class="pub-venue">Applied Sciences, 10(21), 7920, 2020</span></td></tr>
-                    <tr><td class="pub-year">2020</td><td><strong>"Applying touchscreen based navigation techniques to mobile virtual reality with open clip-on lenses"</strong><br>Youngwon R. Kim, Hyeonah Choi, Minwook Chang, Gerard J. Kim<br><span class="pub-venue">Electronics, 9(9), 1448, 2020</span></td></tr>
-                    <tr><td class="pub-year">2017</td><td><strong>"Evaluation of hand-foot coordinated quadruped interaction for mobile applications"</strong><br>Youngwon R. Kim, Euijai Ahn, Gerard J. Kim<br><span class="pub-venue">Journal on Multimodal User Interfaces (JMUI), 11(4), 315-325, 2017</span></td></tr>
-                </tbody></table>
-            </div>
-            <div class="pub-content" id="domestic">
-                <table class="pub-table"><tbody>
-                    <tr><td class="pub-year">2024</td><td><strong>확장현실 환경에서 사실적인 아바타 생성을 위한 사용자 컨트롤러 및 팔꿈치 기반 보정 기술</strong><br>이제민, 이기공, 김영우, 김영원<br><span class="pub-venue">디지털콘텐츠학회논문지, Vol.25, No.8, pp.2597-2605, 2024</span> <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11933515" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Paper</a></td></tr>
-                    <tr><td class="pub-year">2024</td><td><strong>확장현실에서의 저시력 사용자를 위한 Spread 인터랙션 기반 확대 디스플레이</strong><br>이기공, 이제민, 김영우, 김영원<br><span class="pub-venue">디지털콘텐츠학회논문지, Vol.25, No.9, pp.2607-2616, 2024</span> <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11933516" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Paper</a></td></tr>
-                    <tr><td class="pub-year">2023</td><td><strong>AI 인체 자세추정 기반 3D 다중 객체 추적 연구</strong><br><span class="pub-venue">차세대융합기술학회, 2023</span></td></tr>
-                    <tr><td class="pub-year">2023</td><td><strong>딥러닝 영상인식 VR/MR 통합 탐지 플랫폼 제안</strong><br><span class="pub-venue">정보통신학회, 2023</span></td></tr>
-                    <tr><td class="pub-year">2023</td><td><strong>NeRF를 활용한 3D 모델 생성 및 객체 편집 기술 분석</strong><br><span class="pub-venue">정보통신학회, 2023</span></td></tr>
-                    <tr><td class="pub-year">2023</td><td><strong>AI 실감형 메타버스 플랫폼 기반 교육 적용 방안</strong><br><span class="pub-venue">정보통신학회, 2023</span></td></tr>
-                    <tr><td class="pub-year">2021</td><td><strong>RGB 카메라를 활용한 다중 생체신호 탐지 통합 시스템 설계 및 개발</strong><br><span class="pub-venue">차세대융합기술학회, 2021</span></td></tr>
-                    <tr><td class="pub-year">2021</td><td><strong>AI 기반 무형문화재 고도화 아카이빙 플랫폼 설계 연구</strong><br><span class="pub-venue">사회융합연구, 2021</span></td></tr>
-                    <tr><td class="pub-year">2020</td><td><strong>온라인 실험 파라미터 재구성 기반 적응형 사용자 경험 샘플링</strong><br><span class="pub-venue">한국HCI학회, 2020</span></td></tr>
-                    <tr><td class="pub-year">2015</td><td><strong>증강정보의 효과적인 가시화 기법 동향 및 요구사항</strong><br><span class="pub-venue">한국HCI학회, 2015</span></td></tr>
-                </tbody></table>
-            </div>
-            <div class="pub-content" id="patents">
-                <table class="pub-table"><tbody>
-                    <tr><td class="pub-year">2025</td><td><strong>시선 및 손 추적 기반 가상 터치패드 인터랙션</strong><br><span class="pub-venue">특허 출원 10-2025-0151475</span></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>앙와위 XR 상호작용 향상 기술</strong><br><span class="pub-venue">특허 출원 10-2025-0152223</span></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>확장현실 아바타 보정 기술</strong><br><span class="pub-venue">특허 출원 10-2025-0154216</span></td></tr>
-                    <tr><td class="pub-year">2025</td><td><strong>AI 콜센터 역량 평가 시스템</strong><br><span class="pub-venue">특허 출원 10-2025-0096129</span></td></tr>
-                </tbody></table>
-            </div>
+    <section
+      id="publications"
+      class="section page-section"
+      style="display: none"
+    >
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <div class="pub-tabs">
+          <button class="pub-tab active" data-tab="intl-conf">
+            International Conferences
+          </button>
+          <button class="pub-tab" data-tab="intl-journal">
+            International Journals (SCIE)
+          </button>
+          <button class="pub-tab" data-tab="domestic">
+            Domestic Journals (KCI)
+          </button>
+          <button class="pub-tab" data-tab="domestic-conf">
+            Domestic Conferences
+          </button>
+          <button class="pub-tab" data-tab="patents">Patents</button>
         </div>
+        <div class="pub-content active" id="intl-conf">
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"Multi-User VR Assembly and Manufacture Design: Multimodal
+                    Object Modeling and High-Fidelity Gesture Interaction with
+                    WebGL Integration"</strong
+                  ><br />Jeonghyeon Kim, Jemin Lee, Hyeongjun Kang, Taewan Kim,
+                  Jungsik Koo, Jiyong Park, Byungwoo Cho, Yun Young Hwa, Bumki
+                  Kim, Daeun Kim, Youngwon Kim<br /><span class="pub-venue"
+                    >31st ACM VRST 2025 Demo (Canada)</span
+                  >
+                  <a
+                    href="https://dl.acm.org/doi/full/10.1145/3756884.3768385"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"Trade-offs in Virtual Grasping: The Interplay of
+                    Interaction Fidelity and Object Affordance"</strong
+                  ><br />Jemin Lee*, Jeonghyeon Kim*, Hyeongjun Kang, Hoon Ryu,
+                  Youngwon Kim<br /><span class="pub-venue"
+                    >ACM VRST 2025 (Acceptance Rate: 27%, Canada)</span
+                  >
+                  <a
+                    href="https://dl.acm.org/doi/pdf/10.1145/3756884.3765990"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"What Makes Object Referencing Clear? Multimodal Strategies
+                    for Shared Understanding in XR Collaboration"</strong
+                  ><br />Jeonghyeon Kim, Jemin Lee, Youngwon Kim<br /><span
+                    class="pub-venue"
+                    >IEEE ISMAR 2025 (Acceptance Rate: 21.1%, South Korea)</span
+                  >
+                  <a
+                    href="https://doi.org/10.1109/ISMAR67309.2025.00014"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> DOI</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong
+                    >"A comparative analysis on the impact of face tracker and
+                    skin segmentation onto improving the performance of
+                    real-time remote photoplethysmography"</strong
+                  ><br />Kunyoung Lee, Kyungwon Jin, Youngwon Kim, Jee Hang Lee,
+                  Eui Chul Lee<br /><span class="pub-venue"
+                    >12th IHCI 2020 (South Korea)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2019</td>
+                <td>
+                  <strong
+                    >"EasyMR: Presence and Immersion of Easy Mobile Mixed
+                    Reality"</strong
+                  ><br />Hyonah Choi, Youngwon R. Kim, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >HCI International 2019, Springer (US)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2018</td>
+                <td>
+                  <strong
+                    >"A Perceptual Evaluation of GAN Real-time Synthesized Drum
+                    Sounds in a Virtual Environment"</strong
+                  ><br />Minwook Chang, Youngwon R. Kim, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >IEEE AIVR 2018 (Taiwan)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2018</td>
+                <td>
+                  <strong
+                    >"EasyMR: Easy Mixed Reality with Open Flip-on
+                    Lenses"</strong
+                  ><br />Youngwon R. Kim, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >APMAR 2018 (Taiwan)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2017</td>
+                <td>
+                  <strong
+                    >"Presence and Immersion of 'Easy' Mobile VR with Open
+                    Flip-on Lenses"</strong
+                  ><br />Youngwon R. Kim, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >23rd ACM VRST 2017 (Sweden)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2016</td>
+                <td>
+                  <strong
+                    >"HoVR-type: smartphone as a typing interface in VR using
+                    hovering"</strong
+                  ><br />Youngwon R. Kim, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >22nd ACM VRST 2016 (Germany)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2014</td>
+                <td>
+                  <strong
+                    >"Virtual Reality based Collaborative Crime Scene Simulation
+                    Environment"</strong
+                  ><br />Youngwon Kim, Changhyeon Lee, Jonggil Ahn, Gerard J.
+                  Kim<br /><span class="pub-venue">WFF 2014 (Korea)</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2014</td>
+                <td>
+                  <strong
+                    >"Indoor Crime Scene Reconstruction using a Smart
+                    Phone"</strong
+                  ><br />Jonggil Ahn, Youngsun Kim, Youngwon Kim, Gerard J.
+                  Kim<br /><span class="pub-venue">WFF 2014 (Korea)</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2013</td>
+                <td>
+                  <strong
+                    >"Standardization for Mixed and Augmented Reality:
+                    Activities at ISO-IEC SC 24 WG 9"</strong
+                  ><br />Jaedong Lee, Youngwon Kim, Sangyoung Lee, Gerard J.
+                  Kim<br /><span class="pub-venue">VRCAI 2013 (Hong Kong)</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pub-content" id="intl-journal">
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"A Head-Driven Algorithm for Estimating Upper and Lower
+                    Body Motion in Virtual Reality Environments"</strong
+                  ><br />Jemin Lee, Jeonghyeon Kim, Youngwon Kim<br /><span
+                    class="pub-venue"
+                    >IEEE Access, vol. 13, pp. 76627-76637, 2025</span
+                  >
+                  <a
+                    href="https://ieeexplore.ieee.org/document/10979843"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"ITap: Index Finger Tap Interaction by Gaze and Tabletop
+                    Integration"</strong
+                  ><br />Jeonghyeon Kim, Jemin Lee, Jung-Hoon Ahn, Youngwon
+                  Kim<br /><span class="pub-venue"
+                    >Sensors, 25(9), 2833, 2025</span
+                  >
+                  <a
+                    href="https://www.mdpi.com/1424-8220/25/9/2833"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"Immersive Interaction for Inclusive Virtual Reality
+                    Navigation: Enhancing Accessibility for Socially
+                    Underprivileged Users"</strong
+                  ><br />Jeonghyeon Kim, Jung-Hoon Ahn, Youngwon Kim<br /><span
+                    class="pub-venue"
+                    >Electronics, 14(5), 1046, 2025</span
+                  >
+                  <a
+                    href="https://www.mdpi.com/2079-9292/14/5/1046"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2022</td>
+                <td>
+                  <strong
+                    >"Development of a Virtual Object Weight Recognition
+                    Algorithm Based on Pseudo-Haptics and the Development of
+                    Immersion Evaluation Technology"</strong
+                  ><br />Eunjin Son, Hayoung Song, Seonghyeon Nam, Youngwon
+                  Kim<br /><span class="pub-venue"
+                    >Electronics, 11(14), 2274, 2022</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2021</td>
+                <td>
+                  <strong
+                    >"Research on Contactless Bio-Signal Measurement Technology
+                    for Improving Social Awareness of Individuals with
+                    Communication Challenges"</strong
+                  ><br />Nam Seonghyeon, Hayoung Song, Youngwon Kim<br /><span
+                    class="pub-venue"
+                    >Applied Sciences, 11(11), 5169, 2021</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong
+                    >"Blurry Touch Finger: Touch-Based Interaction for Mobile VR
+                    with Clip-on Lenses"</strong
+                  ><br />Youngwon R. Kim, Suhan Park, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >Applied Sciences, 10(21), 7920, 2020</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong
+                    >"Applying touchscreen based navigation techniques to mobile
+                    virtual reality with open clip-on lenses"</strong
+                  ><br />Youngwon R. Kim, Hyeonah Choi, Minwook Chang, Gerard J.
+                  Kim<br /><span class="pub-venue"
+                    >Electronics, 9(9), 1448, 2020</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2017</td>
+                <td>
+                  <strong
+                    >"Evaluation of hand-foot coordinated quadruped interaction
+                    for mobile applications"</strong
+                  ><br />Youngwon R. Kim, Euijai Ahn, Gerard J. Kim<br /><span
+                    class="pub-venue"
+                    >Journal on Multimodal User Interfaces (JMUI), 11(4),
+                    315-325, 2017</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pub-content" id="domestic">
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-year">2024</td>
+                <td>
+                  <strong
+                    >"확장현실 환경에서 사실적인 아바타 생성을 위한 사용자의
+                    컨트롤러와 팔꿈치 기반 조정 기법"</strong
+                  ><br />이제민, 이기공, 김영우, 김영원<br /><span
+                    class="pub-venue"
+                    >디지털콘텐츠학회논문지, 25(9), 2597-2605</span
+                  >
+                  <a
+                    href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11933515"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2024</td>
+                <td>
+                  <strong
+                    >"확장현실에서의 저시력 사용자를 위한 Spread 인터랙션 기반
+                    확대 디스플레이"</strong
+                  ><br />이기공, 이제민, 김영우, 김영원<br /><span
+                    class="pub-venue"
+                    >디지털콘텐츠학회논문지, 25(9), 2607-2616</span
+                  >
+                  <a
+                    href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11933516"
+                    target="_blank"
+                    class="pub-link"
+                    ><i class="fas fa-external-link-alt"></i> Paper</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2023</td>
+                <td>
+                  <strong
+                    >"인공지능 인체 자세추정 기반 3차원 다중객체추적에 관한
+                    연구"</strong
+                  ><br />남성현, 김영원<br /><span class="pub-venue"
+                    >차세대융합기술학회논문지, vol.7, no.8, pp.1182-1189
+                    (2023)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2023</td>
+                <td>
+                  <strong
+                    >"딥러닝 영상인식 기술을 이용한 가상/혼합현실 기반 통합 검출
+                    플랫폼 제안"</strong
+                  ><br />손은진, 김영원<br /><span class="pub-venue"
+                    >한국정보통신학회논문지, vol.27, no.8, pp.905-912
+                    (2023)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2023</td>
+                <td>
+                  <strong
+                    >"NeRF를 이용한 3D 모델 생성 및 개체 편집 기술 분석"</strong
+                  ><br />손은진, 김영원<br /><span class="pub-venue"
+                    >한국정보통신학회논문지, vol.27, no.8, pp.1012-1015
+                    (2023)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2023</td>
+                <td>
+                  <strong
+                    >"인공지능 실감형 메타버스 플랫폼 기반 교육 현장 활용
+                    방안"</strong
+                  ><br />김영원<br /><span class="pub-venue"
+                    >한국정보통신학회논문지, vol.27, no.7, pp.888-891
+                    (2023)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2021</td>
+                <td>
+                  <strong
+                    >"RGB 카메라를 이용한 다중 생체 신호 검출 통합 시스템 설계
+                    및 개발"</strong
+                  ><br />고대준, 황현상, 이건영, 김영원, 이의철<br /><span
+                    class="pub-venue"
+                    >차세대융합기술학회논문지, vol.5, no.5, pp.749-756
+                    (2021)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2021</td>
+                <td>
+                  <strong
+                    >"인공지능 기반 무형문화재 첨단 아카이빙 플랫폼 설계에 관한
+                    연구"</strong
+                  >
+                  [KCI등재후보]<br />김영원<br /><span class="pub-venue"
+                    >사회융합연구, vol.5, no.2, pp.53-62 (2021)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong
+                    >"모바일 어플리케이션의 비교 평가를 위한 실험 파라미터들의
+                    온라인 재구성 기반의 적응형 사용자 경험 샘플링"</strong
+                  ><br />이명희, 김영원, 김정현<br /><span class="pub-venue"
+                    >한국HCI학회논문지, 15권 2호, pp.57-72 (2020)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2015</td>
+                <td>
+                  <strong
+                    >"증강정보의 효과적인 가시화 기법 동향 및 요구사항"</strong
+                  ><br />김영원, 안의재, 김정현<br /><span class="pub-venue"
+                    >한국HCI학회논문지, 10권 2호, pp.27-33 (2015)</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pub-content" id="domestic-conf">
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-year">2024</td>
+                <td>
+                  <strong
+                    >"Speech와 Gaze를 결합한 제조 환경에서의 멀티모달
+                    인터랙션"</strong
+                  ><br />김정현, 이제민, 김영원<br /><span class="pub-venue"
+                    >한국디지털콘텐츠학회 (2024)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2022</td>
+                <td>
+                  <strong
+                    >"3차원 얼굴 랜드마크 기반 시선 추적 시스템 구현"</strong
+                  ><br />남성현, 송하영, 손은진, 김영원<br /><span
+                    class="pub-venue"
+                    >제3회 한국 인공지능학술대회 (2022)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2022</td>
+                <td>
+                  <strong
+                    >"인체 랜드마크를 활용한 비접촉식 호흡 측정 기술에 관한
+                    연구"</strong
+                  ><br />남성현, 송하영, 손은진, 김영원<br /><span
+                    class="pub-venue"
+                    >2022 대한전자공학회 하계학술발표대회 (2022)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2022</td>
+                <td>
+                  <strong
+                    >"XR 환경에서 실감형 인터랙션을 위한 윈도우 포탈 기반
+                    메타월드 시스템 제안"</strong
+                  ><br />송하영, 손은진, 남성현, 김영원<br /><span
+                    class="pub-venue"
+                    >2022 대한전자공학회 하계학술발표대회 (2022)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2022</td>
+                <td>
+                  <strong
+                    >"Pseudo-Haptic 기반 사용자 맞춤형 가상 물체 무게감 인식
+                    알고리즘 제안"</strong
+                  ><br />손은진, 송하영, 남성현, 김영원<br /><span
+                    class="pub-venue"
+                    >2022 대한전자공학회 하계학술발표대회 (2022)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2021</td>
+                <td>
+                  <strong
+                    >"로블록스 플랫폼을 활용한 메타버스·AI 융합기반 인터랙티브
+                    콘텐츠 제안"</strong
+                  ><br />송하영, 남성현, 김영원<br /><span class="pub-venue"
+                    >한국인공지능학술대회 (2021)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2021</td>
+                <td>
+                  <strong
+                    >"메타버스 플랫폼에서 인터랙션을 위한 단일 RGB 카메라 기반
+                    경량화 자세 추정 모델에 관한 연구"</strong
+                  ><br />남성현, 송하영, 김영원<br /><span class="pub-venue"
+                    >한국인공지능학술대회 (2021)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong
+                    >"가상현실 다중 사용자의 물리적 공간 내 충돌 예방을 위한
+                    멀티모달 피드백 및 모니터링 시스템"</strong
+                  ><br />김영원, 장민혁<br /><span class="pub-venue"
+                    >한국멀티미디어학회 (2020)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2020</td>
+                <td>
+                  <strong>"NPC형 AI소방관 구현을 위한 모델링 기초연구"</strong
+                  ><br />김영원, 장민혁<br /><span class="pub-venue"
+                    >한국멀티미디어학회 (2020)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2015</td>
+                <td>
+                  <strong
+                    >"CSI-VR: 가상 현실 시뮬레이션에 기반한 협력적 범죄 수사
+                    도우미 시스템에 대한 분석"</strong
+                  ><br />김영원, 이창현, 김정현<br /><span class="pub-venue"
+                    >제29회 한국법과학회 춘계학술대회 (2015, 한국)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2014</td>
+                <td>
+                  <strong
+                    >"발 인터페이스의 활용안: 모바일 환경에서의 키보드
+                    입력"</strong
+                  ><br />김영원, 이재동, 김정현<br /><span class="pub-venue"
+                    >Korea HCI Conference 2014 (2014, 한국)</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pub-content" id="patents">
+          <table class="pub-table">
+            <tbody>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"시선 및 손 추적 기반 몰입형 2D 평면에서의 가상 터치패드
+                    상호작용 방법 및 시스템"</strong
+                  ><br />김영원, 김정현, 강형준, 김태완, 이제민<br /><span
+                    class="pub-venue"
+                    >출원, [출원번호] 10-2025-0151475 (2025)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"시선 및 스마트폰 입력을 활용한 앙와위(누운 자세) XR
+                    상호작용 향상 방법 및 시스템"</strong
+                  ><br />김영원, 김정현, 강형준, 김태완, 이제민<br /><span
+                    class="pub-venue"
+                    >출원, [출원번호] 10-2025-0152223 (2025)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"확장현실 환경에서 현실적인 아바타 생성을 위한 사용자의
+                    컨트롤러와 팔꿈치 기반 보정 기술"</strong
+                  ><br />김영원, 김정현, 강형준, 김태완, 이제민<br /><span
+                    class="pub-venue"
+                    >출원, [출원번호] 10-2025-0154216 (2025)</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="pub-year">2025</td>
+                <td>
+                  <strong
+                    >"행동 지표 프레임워크 기반의 인공지능 콜센터 상담원 역량
+                    평가 시스템 및 그 방법"</strong
+                  ><br />김영원, 김정현, 강형준, 김태완, 이제민<br /><span
+                    class="pub-venue"
+                    >기술이전, [출원번호] 10-2025-0096129 (2025)</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
     <!-- ============ COURSES ============ -->
-    <section id="courses" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Courses</h2>
+    <section id="courses" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Courses</h2>
 
-            <h3 class="group-title">Undergraduate</h3>
-            <div class="courses-grid">
-                <div class="course-card"><i class="fas fa-photo-video"></i><h4>멀티미디어</h4><p>Multimedia</p></div>
-                <div class="course-card"><i class="fas fa-cube"></i><h4>컴퓨터그래픽스</h4><p>Computer Graphics</p></div>
-                <div class="course-card"><i class="fas fa-window-maximize"></i><h4>윈도우즈프로그래밍</h4><p>Windows Programming</p></div>
-                <div class="course-card"><i class="fas fa-vr-cardboard"></i><h4>메타버스실감기술</h4><p>Metaverse Immersive Technology</p></div>
-                <div class="course-card"><i class="fas fa-lightbulb"></i><h4>창의융합종합설계 1/2</h4><p>Creative Convergence Capstone Design 1/2</p></div>
-                <div class="course-card"><i class="fas fa-cogs"></i><h4>캡스톤디자인 1/2</h4><p>Capstone Design 1/2</p></div>
-            </div>
-
-            <h3 class="group-title">Graduate</h3>
-            <div class="courses-grid">
-                <div class="course-card"><i class="fas fa-photo-video"></i><h4>멀티미디어특론</h4><p>Advanced Multimedia</p></div>
-                <div class="course-card"><i class="fas fa-cube"></i><h4>컴퓨터그래픽스</h4><p>Computer Graphics</p></div>
-                <div class="course-card"><i class="fas fa-vr-cardboard"></i><h4>확장현실특론</h4><p>Advanced Extended Reality</p></div>
-            </div>
+        <h3 class="group-title">Undergraduate</h3>
+        <div class="courses-grid">
+          <div class="course-card">
+            <i class="fas fa-photo-video"></i>
+            <h4>멀티미디어</h4>
+            <p>Multimedia</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-cube"></i>
+            <h4>컴퓨터그래픽스</h4>
+            <p>Computer Graphics</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-window-maximize"></i>
+            <h4>윈도우즈프로그래밍</h4>
+            <p>Windows Programming</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-vr-cardboard"></i>
+            <h4>메타버스실감기술</h4>
+            <p>Metaverse Immersive Technology</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-lightbulb"></i>
+            <h4>창의융합종합설계1</h4>
+            <p>Creative Convergence Comprehensive Design 1</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-lightbulb"></i>
+            <h4>창의융합종합설계2</h4>
+            <p>Creative Convergence Comprehensive Design 2</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-cogs"></i>
+            <h4>캡스톤디자인1</h4>
+            <p>Capstone Design 1</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-cogs"></i>
+            <h4>캡스톤디자인2</h4>
+            <p>Capstone Design 2</p>
+          </div>
         </div>
+
+        <h3 class="group-title">Graduate</h3>
+        <div class="courses-grid">
+          <div class="course-card">
+            <i class="fas fa-photo-video"></i>
+            <h4>멀티미디어특론</h4>
+            <p>Multimedia Advanced Topics</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-cube"></i>
+            <h4>컴퓨터그래픽스</h4>
+            <p>Computer Graphics</p>
+          </div>
+          <div class="course-card">
+            <i class="fas fa-vr-cardboard"></i>
+            <h4>확장현실특론</h4>
+            <p>Extended Reality Advanced Topics</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ AWARDS ============ -->
-    <section id="awards" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Awards</h2>
-            <div class="awards-with-photos">
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2025.11.27</span>
-                        <h4><i class="fas fa-trophy aw-icon"></i> Kit Engineering Fair 2025 - 참여상</h4>
-                        <p>이동희, 한승현, 배태진, 김은영 · 캡스톤디자인 경진대회</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_00.jpg" alt="Kit Engineering Fair 2025" loading="lazy"></div>
-                </div>
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2025.09.17</span>
-                        <h4><i class="fas fa-trophy aw-icon"></i> GameAlfy Contest - 한국게임학회장상</h4>
-                        <p>남윤기 (Team: DaSo) · 한국게임학회</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_01.jpg" alt="GameAlfy Contest" loading="lazy"></div>
-                </div>
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2025.08.22</span>
-                        <h4><i class="fas fa-award aw-icon"></i> 국회의원 표창</h4>
-                        <p>김정현 · 금오공과대학교</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_02.jpg" alt="국회의원 표창" loading="lazy"></div>
-                </div>
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2024.12.21</span>
-                        <h4><i class="fas fa-medal aw-icon"></i> AI 캡스톤디자인 경진대회 - 장려상</h4>
-                        <p>김민수, 김정현 · 금오공과대학교</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_03.jpg" alt="AI 캡스톤 장려상" loading="lazy"></div>
-                </div>
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2024.12.21</span>
-                        <h4><i class="fas fa-medal aw-icon"></i> AI 캡스톤디자인 경진대회 - 우수상 (2등)</h4>
-                        <p>김구, 이제민, 이기공, 임준석 · 금오공과대학교</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_04.jpg" alt="AI 캡스톤 우수상" loading="lazy"></div>
-                </div>
-                <div class="award-entry">
-                    <div class="award-info">
-                        <span class="aw-date-badge">2024.11.08</span>
-                        <h4><i class="fas fa-medal aw-icon"></i> 한국디지털콘텐츠학회 추계학술대회 - 동상 (3등)</h4>
-                        <p>김정현, 이제민, 김영원 · 금오공과대학교</p>
-                    </div>
-                    <div class="award-photo"><img src="images/awards/award_05.jpg" alt="디지털콘텐츠학회 동상" loading="lazy"></div>
-                </div>
+    <section id="awards" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Awards</h2>
+        <div class="awards-with-photos">
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2025.11.27</span>
+              <h4>
+                <i class="fas fa-trophy aw-icon"></i> Kit Engineering Fair 2025
+                - Participation Award
+              </h4>
+              <p>
+                Donghee Lee, Seunghyeon Han, Taejin Bae, Eunyoung Kim · Kumoh
+                National Institute of Technology
+              </p>
             </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_00.jpg"
+                alt="Kit Engineering Fair 2025"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2025.09.17</span>
+              <h4>
+                <i class="fas fa-trophy aw-icon"></i> GameAlfy Contest - Korea
+                Game Society Award
+              </h4>
+              <p>Yoongi Nam (Team: DaSo) · Korea Game Society</p>
+            </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_01.jpg"
+                alt="GameAlfy Contest"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2025.08.22</span>
+              <h4><i class="fas fa-award aw-icon"></i> Commendation Award</h4>
+              <p>
+                Jeonghyeon Kim · Awarded by a Member of the National Assembly of
+                Korea, Kumoh National Institute of Technology
+              </p>
+            </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_02.jpg"
+                alt="Commendation Award"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2024.12.21</span>
+              <h4>
+                <i class="fas fa-medal aw-icon"></i> Honorable Mention - 2024 AI
+                Capstone Design Competition
+              </h4>
+              <p>
+                Minsu Kim, Jeonghyeon Kim · Kumoh National Institute of
+                Technology
+              </p>
+            </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_03.jpg"
+                alt="AI Capstone Honorable Mention"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2024.12.21</span>
+              <h4>
+                <i class="fas fa-medal aw-icon"></i> Outstanding Prize (2nd) -
+                2024 AI Capstone Design Competition
+              </h4>
+              <p>
+                Gu Kim, Jemin Lee, Kikong Lee, Junseok Im · Kumoh National
+                Institute of Technology
+              </p>
+            </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_04.jpg"
+                alt="AI Capstone Outstanding Prize"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="award-entry">
+            <div class="award-info">
+              <span class="aw-date-badge">2024.11.08</span>
+              <h4>
+                <i class="fas fa-medal aw-icon"></i> Bronze Prize (3rd) - 2024
+                Fall Korea Digital Contents Society Conference
+              </h4>
+              <p>
+                Jeonghyeon Kim, Jemin Lee, Youngwon Kim · Kumoh National
+                Institute of Technology
+              </p>
+            </div>
+            <div class="award-photo">
+              <img
+                src="images/awards/award_05.jpg"
+                alt="Digital Contents Society Bronze Prize"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ============ GALLERY ============ -->
-    <section id="gallery" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Gallery</h2>
-            <h3 class="group-title">2025</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/gallery/g00.jpg" alt="25.11. Demo Session at VRST 2025" loading="lazy"><span class="gallery-caption">25.11. Demo Session at VRST 2025</span></div>
-                <div class="gallery-item"><img src="images/gallery/g01.jpg" alt="25.11. Paper Presentation at VRST 2025" loading="lazy"><span class="gallery-caption">25.11. Paper Presentation at VRST 2025</span></div>
-                <div class="gallery-item"><img src="images/gallery/g02.jpg" alt="25.10. Paper Presentation at ISMAR 2025" loading="lazy"><span class="gallery-caption">25.10. Paper Presentation at ISMAR 2025</span></div>
-                <div class="gallery-item"><img src="images/gallery/g03.jpg" alt="25.10. Attending ISMAR 2025" loading="lazy"><span class="gallery-caption">25.10. Attending ISMAR 2025</span></div>
-                <div class="gallery-item"><img src="images/gallery/g04.jpg" alt="25.09. APMAR" loading="lazy"><span class="gallery-caption">25.09. APMAR</span></div>
-                <div class="gallery-item"><img src="images/gallery/g05.jpg" alt="25.09. APMAR" loading="lazy"><span class="gallery-caption">25.09. APMAR</span></div>
-                <div class="gallery-item"><img src="images/gallery/g06.jpg" alt="25.09. APMAR" loading="lazy"><span class="gallery-caption">25.09. APMAR</span></div>
-                <div class="gallery-item"><img src="images/gallery/g07.jpg" alt="25.09. NIA Progress Review Meeting" loading="lazy"><span class="gallery-caption">25.09. NIA Progress Review Meeting</span></div>
-                <div class="gallery-item"><img src="images/gallery/g08.jpg" alt="25.09. GADLEX" loading="lazy"><span class="gallery-caption">25.09. GADLEX</span></div>
-                <div class="gallery-item"><img src="images/gallery/g09.jpg" alt="25.09. GADLEX" loading="lazy"><span class="gallery-caption">25.09. GADLEX</span></div>
-                <div class="gallery-item"><img src="images/gallery/g10.jpg" alt="25.09. Our Professor's Birthday" loading="lazy"><span class="gallery-caption">25.09. Our Professor's Birthday</span></div>
-                <div class="gallery-item"><img src="images/gallery/g11.jpg" alt="25.08. Graduation Ceremony" loading="lazy"><span class="gallery-caption">25.08. Graduation Ceremony</span></div>
-                <div class="gallery-item"><img src="images/gallery/g12.jpg" alt="25.05. Teachers' Day" loading="lazy"><span class="gallery-caption">25.05. Teachers' Day</span></div>
-                <div class="gallery-item"><img src="images/gallery/g13.jpg" alt="25.04. Attending CHI 2025" loading="lazy"><span class="gallery-caption">25.04. Attending CHI 2025</span></div>
-            </div>
-            <h3 class="group-title">2024</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/gallery/g14.jpg" alt="24.12. AI Capstone Design Competition" loading="lazy"><span class="gallery-caption">24.12. AI Capstone Design Competition</span></div>
-                <div class="gallery-item"><img src="images/gallery/g15.jpg" alt="24.12. AI Capstone Design Competition" loading="lazy"><span class="gallery-caption">24.12. AI Capstone Design Competition</span></div>
-                <div class="gallery-item"><img src="images/gallery/g16.jpg" alt="24.11. Digital Contents Society Conference" loading="lazy"><span class="gallery-caption">24.11. Digital Contents Society Conference</span></div>
-                <div class="gallery-item"><img src="images/gallery/g17.jpg" alt="24.11. Engineering Fair at KIT" loading="lazy"><span class="gallery-caption">24.11. Engineering Fair at KIT</span></div>
-                <div class="gallery-item"><img src="images/gallery/g18.jpg" alt="24.11. Digital Contents Society Conference" loading="lazy"><span class="gallery-caption">24.11. Digital Contents Society Conference</span></div>
-                <div class="gallery-item"><img src="images/gallery/g19.jpg" alt="24.10. Multimodal AI Poster Presentation" loading="lazy"><span class="gallery-caption">24.10. Multimodal AI Poster Presentation</span></div>
-                <div class="gallery-item"><img src="images/gallery/g20.jpg" alt="24.10. English Study" loading="lazy"><span class="gallery-caption">24.10. English Study</span></div>
-                </div>
+    <section id="gallery" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <h3 class="group-title">2025</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery/g00.jpg" alt="25.11. Demo Session at VRST 2025" loading="lazy" /><span class="gallery-caption">25.11. Demo Session at VRST 2025</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g01.jpg" alt="25.11. Paper Presentation at VRST 2025" loading="lazy" /><span class="gallery-caption">25.11. Paper Presentation at VRST 2025</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g02.jpg" alt="25.10. Paper Presentation at ISMAR 2025" loading="lazy" /><span class="gallery-caption">25.10. Paper Presentation at ISMAR 2025</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g03.jpg" alt="25.09. APMAR" loading="lazy" /><span class="gallery-caption">25.09. APMAR</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g04.jpg" alt="25.09. (NIA) Progress Review Meeting" loading="lazy" /><span class="gallery-caption">25.09. (NIA) Progress Review Meeting</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g05.jpg" alt="25.10. Attending ISMAR 2025" loading="lazy" /><span class="gallery-caption">25.10. Attending ISMAR 2025</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g06.jpg" alt="25.09. APMAR" loading="lazy" /><span class="gallery-caption">25.09. APMAR</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g07.jpg" alt="25.09. GADLEX" loading="lazy" /><span class="gallery-caption">25.09. GADLEX</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g08.jpg" alt="25.09. GADLEX" loading="lazy" /><span class="gallery-caption">25.09. GADLEX</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g10.jpg" alt="25.05. Teachers' Day" loading="lazy" /><span class="gallery-caption">25.05. Teachers' Day</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g11.jpg" alt="25.04. Attending the CHI 2025 Conference" loading="lazy" /><span class="gallery-caption">25.04. Attending the CHI 2025 Conference</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/25keti.png" alt="25.01. Technology demonstration at the Korea Electronics Technology Institute" loading="lazy" /><span class="gallery-caption">25.01. Technology demonstration at the Korea Electronics Technology Institute</span>
+          </div>
         </div>
+        <h3 class="group-title">2024</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery/g12.jpg" alt="24.12. AI Capstone Design Competition at Youngnam University" loading="lazy" /><span class="gallery-caption">24.12. AI Capstone Design Competition at Youngnam University</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g13.jpg" alt="24.12. AI Capstone Design Competition at Youngnam University" loading="lazy" /><span class="gallery-caption">24.12. AI Capstone Design Competition at Youngnam University</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g14.jpg" alt="24.11. Academic Paper Competition of the Digital Contents Society" loading="lazy" /><span class="gallery-caption">24.11. Academic Paper Competition of the Digital Contents Society</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g15.jpg" alt="24.11. Engineering Fair at Kumoh National Institute of Technology" loading="lazy" /><span class="gallery-caption">24.11. Engineering Fair at Kumoh National Institute of Technology</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g16.jpg" alt="24.10. Multimodal AI Poster Presentation" loading="lazy" /><span class="gallery-caption">24.10. Multimodal AI Poster Presentation</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g17.jpg" alt="24.10. English Study" loading="lazy" /><span class="gallery-caption">24.10. English Study</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/24.09. Celebrating Our Professor's Birthday.png" alt="24.09. Celebrating Our Professor's Birthday" loading="lazy" /><span class="gallery-caption">24.09. Celebrating Our Professor's Birthday</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/24.07. Vision Pro Experience.jpg" alt="24.07. Vision Pro Experience" loading="lazy" /><span class="gallery-caption">24.07. Vision Pro Experience</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g18.jpg" alt="24.07. Vision Pro Experience" loading="lazy" /><span class="gallery-caption">24.07. Vision Pro Experience</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/24.07. Lab dinner.png" alt="24.07. Lab dinner" loading="lazy" /><span class="gallery-caption">24.07. Lab dinner</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g19.jpg" alt="24.07. Lab dinner" loading="lazy" /><span class="gallery-caption">24.07. Lab dinner</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/g20.jpg" alt="24.07. Photo of our lab" loading="lazy" /><span class="gallery-caption">24.07. Photo of our lab</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" style="display:none;">
-        <button class="lb-close" id="lbClose">&times;</button>
-        <button class="lb-prev" id="lbPrev">&#10094;</button>
-        <button class="lb-next" id="lbNext">&#10095;</button>
-        <img class="lb-img" id="lbImg" src="" alt="">
+    <div class="lightbox" id="lightbox" style="display: none">
+      <button class="lb-close" id="lbClose">&times;</button>
+      <button class="lb-prev" id="lbPrev">&#10094;</button>
+      <button class="lb-next" id="lbNext">&#10095;</button>
+      <img class="lb-img" id="lbImg" src="" alt="" />
     </div>
 
     <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section page-section" style="display:none;">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-grid">
-                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><h4>Address</h4><p>B111, Digital Building<br>Kumoh National Institute of Technology<br>61 Daehak-ro, Gumi-si, Gyeongsangbuk-do</p></div>
-                <div class="contact-item"><i class="fas fa-envelope"></i><h4>Email</h4><p>kim01@kumoh.ac.kr</p></div>
-                <div class="contact-item"><i class="fas fa-globe"></i><h4>Web</h4><p>haxlab-kit.github.io</p></div>
-            </div>
+    <section id="contact" class="section page-section" style="display: none">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Address</h4>
+            <p>
+              B111, Digital Building<br />Kumoh National Institute of
+              Technology<br />61 Daehak-ro, Gumi-si, Gyeongsangbuk-do
+            </p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>kim01@kumoh.ac.kr</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <h4>Web</h4>
+            <p>haxlab-kit.github.io</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-inner">
-            <img src="images/home/logo.jpg" alt="">
-            <p>&copy; 2024-2026 HAX Lab · Kumoh National Institute of Technology</p>
-        </div>
+      <div class="footer-inner">
+        <p>HAX Lab - Human-centered AX Lab</p>
+        <p>&copy; 2024-2026 Kumoh National Institute of Technology</p>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
