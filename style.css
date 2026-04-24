@@ -131,7 +131,7 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-0.01em;color:var(--ink)}
 .director-card{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:start;padding:40px 0;margin-bottom:60px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .2s}
 .director-card.clickable{cursor:pointer}
 .director-card.clickable:hover{background:var(--paper-alt)}
-.director-photo{width:220px}
+.director-photo{width:220px;max-width:100%}
 .director-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:6px;display:block}
 .director-info h3{font-family:'Montserrat',sans-serif;font-size:2.4rem;font-weight:400;margin-bottom:6px;letter-spacing:-0.02em;line-height:1.1}
 .director-info .name-kr{font-family:'Noto Sans KR',sans-serif;font-size:1rem;color:var(--ink-mute);font-weight:400;margin-left:8px;letter-spacing:0}
@@ -348,7 +348,7 @@ h1,h2,h3,h4{font-weight:600;letter-spacing:-0.01em;color:var(--ink)}
   .hero-meta{flex-direction:column;gap:8px}
   .about-stats{gap:32px;flex-wrap:wrap}
   .director-card{grid-template-columns:1fr;gap:24px}
-  .director-photo{width:180px}
+  .director-photo{width:100%;max-width:none}
   .people-grid{grid-template-columns:repeat(2,1fr)}
   .news-row{grid-template-columns:auto auto 1fr;grid-template-areas:"date tag tag" "content content content";column-gap:14px;row-gap:8px;padding:18px 0}
   .news-row > .news-date{grid-area:date;font-size:.76rem}
