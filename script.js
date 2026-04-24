@@ -155,7 +155,7 @@ const personData = {
         dept: 'Department of Computer Software Engineering',
         affil: 'Kumoh National Institute of Technology, South Korea',
         email: 'kim01@kumoh.ac.kr',
-        phone: '054-478-6625 (domestic) / +82-54-478-6625 (Int\'l)',
+        phone: '054-478-7542 (domestic) / +82-54-478-7542 (Int\'l)',
         office: 'B112, Digital Building, Kumoh National Institute of Technology, 61 Daehak-ro, Gumi-si, Gyeongsangbuk-do, Republic of Korea',
         tags: ['XR','VR','AR','MR','HCI','Metaverse'],
         education: [
