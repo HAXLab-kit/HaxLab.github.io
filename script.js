@@ -348,7 +348,7 @@ const personData = {
     },
     lee_juyoung: {
         name: 'Juyoung Lee', nameKr: '이주영',
-        photo: 'images/people/lee_juyoung.jpg',
+        photo: 'images/people/주영.jpg',
         role: 'Undergraduate Student',
         dept: 'Department of Computer Software Engineering',
         affil: 'Kumoh National Institute of Technology',
